@@ -1,0 +1,17 @@
+\documentclass[dvipdfmx,uplatex,b5paper,openany,class=gachimuchi]{standalone}
+\usepackage{gcmcstyle}
+\begin{document}
+\begin{tikzpicture}
+  \tikzset{block/.style={shape=rectangle,text centered,rounded corners,draw}};
+  \node[block](Per) at (0,1){完全(音程)};
+  \node[block](Maj) at (1,-1){長(音程)};
+  \node[block](Min) at (-1,-1){短(音程)};
+  \node[block](Dim) at (-3,0){減(音程)};
+  \node[block](Aug) at (3,0){増(音程)};
+  \node[block](HevDim) at (-5,0){重減(音程)};
+  \node[block](HevAug) at (5,0){重増(音程)};
+  \draw[thick] (Per.west) -- (Dim.north east) (Per.east) -- (Aug.north west);
+  \draw[thick] (Min.west) -- (Dim.south east) (Maj.east) -- (Aug.south west);
+  \draw[thick] (Maj) -- (Min) (Aug) -- (HevAug) (Dim) -- (HevDim);
+\end{tikzpicture}
+\end{document}

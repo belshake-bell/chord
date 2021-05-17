@@ -1,0 +1,24 @@
+\documentclass[dvipdfmx,uplatex,b5paper,openany,class=gachimuchi]{standalone}
+\usepackage{gcmcstyle}
+\begin{document}
+\begin{tikzpicture}[xscale=0.2, yscale=0.7]% tikzpicture環境開始
+\foreach \OctaveNum in{0, 1}{%各オクターブについて
+  \pgfmathsetlength{\bellTempdima}{490mm * \OctaveNum}%
+  \draw (\bellTempdima , 0) rectangle +(490mm,15);
+  \foreach \num in{0, 1, ..., 6}{%白鍵
+    \pgfmathsetlength{\bellTempdima}{70mm * \num + 490mm * \OctaveNum}%
+    \draw(\bellTempdima , 0) -- ++(0, 15);
+  }
+%490/ 7 = 70, 70 *3 /5 = 42, 70 *4 /7 =40 
+  \foreach \num in{1, 3}{%cis, dis
+    \pgfmathsetlength{\bellTempdima}{42mm * \num + 490mm * \OctaveNum}%
+    \fill (\bellTempdima , 15) rectangle +(42mm , -9.5);
+  }
+  \foreach \num in{1, 3, 5}{%fis, gis, ais
+    \pgfmathsetlength{\bellTempdima}{40mm * \num + 210mm + 490mm * \OctaveNum}%
+    \fill (\bellTempdima , 15) rectangle +(40mm , -9.5);
+  }
+}
+%
+\end{tikzpicture} % tikzpicture環境終了
+\end{document}

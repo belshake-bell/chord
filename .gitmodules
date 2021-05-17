@@ -1,0 +1,3 @@
+[submodule "gachimuchi_additonal_package"]
+	path = gachimuchi_additonal_package
+	url = ../gachimuchi_additonal_package
