@@ -1934,12 +1934,12 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
 例えば；
 \begin{enumerate}
   \begin{minipage}{.45\linewidth}%
-  \item \CProgl-{F;G;C}%
-  \item \CProgl-{C;D;G}%
+  \item \tracingmacros2\tracingcommands2\CProgl-{F&G&C}\tracingcommands0\tracingmacros0%
+  \item \CProgl-{C&D&G}%
   \end{minipage}
   \begin{minipage}{.45\linewidth}%
-  \item \CProgl-{B\aFlat;C;F}%
-  \item \CProgl-{B\aFlat\Min;C;F\Min}%
+  \item \CProgl-{B\aFlat&C&F}%
+  \item \CProgl-{B\aFlat\Min&C&F\Min}%
   \end{minipage}
 \end{enumerate}
 
@@ -1975,12 +1975,12 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
 先の例を再掲しましょう：
 \begin{enumerate}
   \begin{minipage}{.45\linewidth}%
-  \item \CProgl-{F;G;C}%
-  \item \CProgl-{C;D;G}%
+  \item \CProgl-{F&G&C}%
+  \item \CProgl-{C&D&G}%
   \end{minipage}
   \begin{minipage}{.45\linewidth}%
-  \item \CProgl-{B\aFlat;C;F}%
-  \item \CProgl-{B\aFlat\Min;C;F\Min}%
+  \item \CProgl-{B\aFlat&C&F}%
+  \item \CProgl-{B\aFlat\Min&C&F\Min}%
   \end{minipage}
 \end{enumerate}
 この例では，Cという和音はそれぞれ(in C Major) \Funktion{T}，(in G Major) \Funktion{S}，
