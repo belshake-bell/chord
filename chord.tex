@@ -3,10 +3,13 @@
 \usepackage{gachimuchi_additonal_package/gcmcstyle}
 \makeindex
 
-\title{ガチムチ音楽理論講座 コード編 ver.~0.16beta}
+\title{ガチムチ音楽理論講座 コード編 ver.~0.16}
 \author{bell}
 \date{\the\year/\the\month/\the\day}
 %\useTikzSlurtrue
+% TL2020Frozenではdvipdfmxを経由するとmusix13を使うときに臨時記号を使うと符頭がずれる現象があるので
+% 応急的な対処としてmusix16をスケールさせる．
+\font\musicthirteen musix16 at 12.8pt\relax
 \begin{document}\frontmatter
 \maketitle
 \phantomsection\addcontentsline{toc}{chapter}{目次}\tableofcontents
