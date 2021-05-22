@@ -1,0 +1,10 @@
+% -*- coding: utf-8 -*-
+
+delim_0 "\\hfill"
+delim_1 "\\hfill"
+delim_2 "\\hfill"
+
+preamble "\\begin{theindex}\\small\n"
+
+encap_prefix "\\textGaramond{\\"
+encap_suffix "}}"
