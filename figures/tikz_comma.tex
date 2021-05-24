@@ -1,0 +1,121 @@
+\documentclass[b5paper,openany]{standalone}
+\usepackage{luatexja-preset}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}[scale=2]
+  \tikzset{note/.style={shape=circle,text centered,draw}};
+  \node          (T) at (0,0)              {C};
+  \node          (D) at (1,0)              {G};
+  \node         (DD) at         ($(D)+(D)$) {D};
+  \node        (DDD) at        ($(DD)+(D)$) {A};
+  \node       (DDDD) at       ($(DDD)+(D)$) {E};
+  \node      (DDDDD) at      ($(DDDD)+(D)$) {H};
+  \node          (S) at         ($(T)-(D)$) {F};
+  \node         (SS) at         ($(S)-(D)$) {B};
+  \node        (SSS) at        ($(SS)-(D)$) {Es};
+  \node       (SSSS) at       ($(SSS)-(D)$) {As};
+  \node          (M) at (60:1)              {E};
+  \node         (DM) at         ($(D)+(M)$) {H};
+  \node        (DDM) at        ($(DD)+(M)$) {Fis};
+  \node       (DDDM) at       ($(DDD)+(M)$) {Cis};
+  \node      (DDDDM) at      ($(DDDD)+(M)$) {Gis};
+  \node         (SM) at         ($(S)+(M)$) {A};
+  \node        (SSM) at        ($(SS)+(M)$) {D};
+  \node       (SSSM) at       ($(SSS)+(M)$) {G};
+  \node      (SSSSM) at      ($(SSSS)+(M)$) {C};
+  \node         (MM) at         ($(M)+(M)$) {Gis};
+  \node        (DMM) at        ($(DM)+(M)$) {Dis};
+  \node       (DDMM) at       ($(DDM)+(M)$) {Ais};
+  \node      (DDDMM) at      ($(DDDM)+(M)$) {Eis};
+  \node     (DDDDMM) at     ($(DDDDM)+(M)$) {His};
+  \node        (SMM) at        ($(SM)+(M)$) {Cis};
+  \node       (SSMM) at       ($(SSM)+(M)$) {Fis};
+  \node      (SSSMM) at      ($(SSSM)+(M)$) {H};
+  \node     (SSSSMM) at     ($(SSSSM)+(M)$) {E};
+  \node    (SSSSSMM) at    ($(SSSSMM)-(D)$) {A};
+  \node        (MMM) at        ($(MM)+(M)$) {His};
+  \node       (DMMM) at       ($(DMM)+(M)$) {Fisis};
+  \node      (DDMMM) at      ($(DDMM)+(M)$) {Cisis};
+  \node     (DDDMMM) at     ($(DDDMM)+(M)$) {Gisis};
+  \node       (SMMM) at       ($(SMM)+(M)$) {Eis};
+  \node      (SSMMM) at      ($(SSMM)+(M)$) {Ais};
+  \node     (SSSMMM) at     ($(SSSMM)+(M)$) {Dis};
+  \node    (SSSSMMM) at    ($(SSSSMM)+(M)$) {Gis};
+  \node   (SSSSSMMM) at   ($(SSSSSMM)+(M)$) {Cis};
+  \node       (MMMM) at       ($(MMM)+(M)$) {Disis};
+  \node      (DMMMM) at      ($(DMMM)+(M)$) {Aisis};
+  \node     (DDMMMM) at     ($(DDMMM)+(M)$) {Eisis};
+  \node    (DDDMMMM) at    ($(DDDMMM)+(M)$) {Hisis};
+  \node      (SMMMM) at      ($(SMMM)+(M)$) {Gisis};
+  \node     (SSMMMM) at     ($(SSMMM)+(M)$) {Cisis};
+  \node    (SSSMMMM) at    ($(SSSMMM)+(M)$) {Fisis};
+  \node   (SSSSMMMM) at   ($(SSSSMMM)+(M)$) {His};
+  \node  (SSSSSMMMM) at  ($(SSSSSMMM)+(M)$) {Eis};
+  \node (SSSSSSMMMM) at ($(SSSSSMMMM)-(D)$) {Ais};
+  \node          (m) at (-60:1)             {Es};
+  \node         (Dm) at         ($(D)+(m)$) {B};
+  \node        (DDm) at        ($(DD)+(m)$) {F};
+  \node       (DDDm) at       ($(DDD)+(m)$) {C};
+  \node      (DDDDm) at      ($(DDDD)+(m)$) {G};
+  \node         (Sm) at         ($(S)+(m)$) {As};
+  \node        (SSm) at        ($(SS)+(m)$) {Des};
+  \node       (SSSm) at       ($(SSS)+(m)$) {Ges};
+  \node      (SSSSm) at      ($(SSSS)+(m)$) {Ces};
+  \node         (mm) at         ($(m)+(m)$) {Ges};
+  \node        (Dmm) at        ($(Dm)+(m)$) {Des};
+  \node       (DDmm) at       ($(DDm)+(m)$) {As};
+  \node      (DDDmm) at      ($(DDDm)+(m)$) {Es};
+  \node     (DDDDmm) at     ($(DDDDm)+(m)$) {B};
+  \node        (Smm) at        ($(Sm)+(m)$) {Ces};
+  \node       (SSmm) at       ($(SSm)+(m)$) {Fes};
+  \node      (SSSmm) at      ($(SSSm)+(m)$) {Bes};
+  \node     (SSSSmm) at     ($(SSSSm)+(m)$) {Eses};
+  \node    (SSSSSmm) at    ($(SSSSmm)-(D)$) {Ases};
+  \draw (SSSS) -- (SSS) -- (SS) -- (S) -- (T)
+        -- (D) -- (DD) -- (DDD) -- (DDDD) -- (DDDDD);
+  \draw (SSSSM) -- (SSSM) -- (SSM) -- (SM) -- (M)
+        -- (DM) -- (DDM) -- (DDDM) -- (DDDDM);
+  \draw (SSSSm) -- (SSSm) -- (SSm) -- (Sm) -- (m)
+        -- (Dm) -- (DDm) -- (DDDm) -- (DDDDm);
+  \draw (SSSS) -- (SSSSM)
+      -- (SSS) -- (SSSM)
+      --  (SS) -- (SSM)
+      --   (S) -- (SM)
+      --   (T) -- (M)
+      --   (D) -- (DM)
+      --  (DD) -- (DDM)
+      -- (DDD) -- (DDDM)
+      --(DDDD) -- (DDDDM)
+      --(DDDDD);
+  \draw (SSSS) -- (SSSSm)
+      -- (SSS) -- (SSSm)
+      --  (SS) -- (SSm)
+      --   (S) -- (Sm)
+      --   (T) -- (m)
+      --   (D) -- (Dm)
+      --  (DD) -- (DDm)
+      -- (DDD) -- (DDDm)
+      --(DDDD) -- (DDDDm)
+      --(DDDDD);
+  \draw[blue,font=\tiny,arrows={->}] (T) to[bend right=10] node[sloped,below]     {Ton maj.} (DD);
+  \draw[blue,font=\tiny,arrows={->}] (DDDm) -- (DD)  node[midway,sloped,above]    {Ton min.};
+  \draw[red,font=\tiny,arrows={->}] (SSSMM) -- (T)   node[midway,sloped,above]    {Semi-ton max.};
+  \draw[red,font=\tiny,arrows={->}]    (DM) -- (T)   node[midway,sloped,above]    {Semi-ton maj.};
+  \draw[magenta,font=\tiny,arrows={->}] (SSSSm) -- (T)   node[pos=.6,sloped,above]    {Semi-ton moy.};
+  \draw[magenta,font=\tiny,arrows={->}]   (Smm) -- (T)   node[midway,sloped,above]    {Semi-ton min.};
+% \draw[magenta,font=\tiny,arrows={->}]   (Smm) to[bend left=15] node[pos=.2,sloped,above]  {Dieze maj.}(SSSSM);
+  \draw[magenta,font=\tiny,arrows={->}]   (Smm) -- (SSSSM) node[pos=.2,sloped,above]  {Dieze maj.};
+  \draw[orange,font=\tiny,arrows={->}] (SSSMM) to[bend left=10] node[pos=.3,sloped,above]   {Semi-ton moi.} (Smm);
+  \draw[orange,font=\tiny,arrows={->}] (DDDDD) to[bend left=10] node[sloped,below]  {Diaschisma} (Smm);
+  \draw[orange,font=\tiny,arrows={->}] (DM)    to[bend right=10] node[pos=.3,sloped,above]  {Diaschisma} (SSSSm);
+  \draw[orange,font=\tiny,arrows={->}] (DDDDD) -- (SSSSm) node[midway,sloped,above] {Schisma};
+  \draw[violet,font=\tiny,arrows={->}] (Smm) -- (SSSSMMMM) node[pos=.7,sloped,above] {Kleisma};
+  \draw[teal,font=\tiny,arrows={->}] (DM) -- (DDDDD) node[midway,sloped,above]    {Comma};
+  \draw[teal,font=\tiny,arrows={->}] (SSSMM) -- (DM) node[midway,sloped,above]    {Comma};
+  \draw[teal,font=\tiny,arrows={->}] (SSSSm) -- (Smm) node[midway,sloped,above]   {Comma};
+  \draw[orange,font=\tiny,arrows={->}] (SSSMM) to[bend left=10] node[pos=.4,sloped,below]  {Dieze min.}(SSSSm);
+  \draw[orange,font=\tiny,arrows={->}] (SSSSMMMM) to[bend left=10] node[sloped,below]  {Dieze min.}(SSSSM);
+\end{tikzpicture}
+\end{document}

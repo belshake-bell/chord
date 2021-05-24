@@ -1,0 +1,29 @@
+\documentclass[b5paper,openany]{standalone}
+\usepackage{luatexja-preset}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}[scale=2]
+  \tikzset{note/.style={shape=circle,text centered,draw}};
+  \node (T) at (0,0){C};
+  \node (D) at (1,0){G};
+  \node (S) at (-1,0){F};
+  \node (M) at (60:1){E};
+  \node (SM) at ($(S)+(M)$) {A};
+  \node (m) at (-60:1){Es};
+  \node (Sm) at ($(S)+(m)$) {As};
+  \node (DD) at ($(D)+(D)$) {D};
+  \node (DM) at ($(D)+(M)$){H};
+  \node (Dm) at ($(D)+(m)$){B};
+  \draw (S) -- (T) -- (D) -- (DD);
+  \draw (SM) -- (M) -- (DM);
+  \draw (Sm) -- (m) -- (Dm);
+  \draw (S)--(SM)--(T)--(M)--(D)--(DM)--(DD);
+  \draw (S)--(Sm)--(T)--(m)--(D)--(Dm)--(DD);
+  \draw[red,font=\tiny,arrows={->}] (DM) -- (T) node[midway,sloped,above]{lead-tone};
+  \draw[red,arrows={->}] (D) to[bend left] (T);
+  \draw[blue,font=\tiny,arrows={->}] (Sm) -- (D) node[midway,sloped,above]{inv.~lead-tone};
+  \draw[blue,arrows={->}] (S) to[bend left] (T);
+\end{tikzpicture}
+\end{document}

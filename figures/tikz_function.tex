@@ -1,0 +1,31 @@
+\documentclass[b5paper,openany,multi={tikzpicture}]{standalone}
+\usepackage{luatexja-preset}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+
+\begin{tikzpicture}[x=1.5cm,y=2cm]
+	\tikzset{typeA/.style={blue}};
+	\tikzset{typeB/.style={red}};
+	\tikzset{typeC/.style={green}};
+	\tikzset{typeD/.style={magenta}};
+	\draw[help lines] (-5,-1.8) grid[xstep=.1,ystep=.125] (5,1.8);
+	\draw[thin,black!50] (-5,-1.8) grid[xstep=1,ystep=1] (5,1.8);
+	\draw[->] (-5,0) -- (5,0) node[right] {$x$};
+	\draw[->] (0,-2) -- (0,2) node[above] {$y$};
+	\input{testA.dat};
+\end{tikzpicture}
+\begin{tikzpicture}[x=1.5cm,y=2cm]
+	\tikzset{typeA/.style={blue}};
+	\tikzset{typeB/.style={red}};
+	\tikzset{typeC/.style={green}};
+	\tikzset{typeD/.style={magenta}};
+	\draw[help lines] (-5,-1.8) grid[xstep=.1,ystep=.125] (5,1.8);
+	\draw[thin,black!50] (-5,-1.8) grid[xstep=1,ystep=1] (5,1.8);
+	\draw[->] (-5,0) -- (5,0) node[right] {$x$};
+	\draw[->] (0,-2) -- (0,2) node[above] {$y$};
+	\input{testB.dat};
+\end{tikzpicture}
+
+\end{document}
