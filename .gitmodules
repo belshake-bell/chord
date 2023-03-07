@@ -1,7 +1,7 @@
 [submodule "figures"]
 	path = figures
-	url = ../figures
+	url = git@github.com:belshake-bell/figures.git
 [submodule "gachimuchi_additonal_package"]
 	path = gachimuchi_additonal_package
-	url = ../gachimuchi_additonal_package
+	url = git@github.com:belshake-bell/gachimuchi_additonal_package.git
 	branch = dev
