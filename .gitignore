@@ -5,3 +5,4 @@
 *.diff
 logs/
 *.bat
+*.map
