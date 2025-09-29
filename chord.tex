@@ -1855,7 +1855,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   \zchordsu{A\Dimt}\zw{=3}\zw{5}\wh{7}%
   \zchordsu{B\Dimt}\zw{=4}\zw{6}\wh{8}%
   \en
-  \endpiece\piecelabel{各音階上の三和音}%
+  \endpiece\piececaption{各音階上の三和音．}\piecelabel{各音階上の三和音}%
 \end{Music}
 
 以下では断りがない限りは自然的音階および和声的音階の和音について見ていきます\footnote{%
@@ -1877,9 +1877,10 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
 があげられます．
 これら3つの三和音を合わせて\KeyBF{主要三和音}といいます．
 長調では\Gni ，\Gniv ，\Gnv が，
-短調では\Gni\Min ，\Gniv\Min ，\Gnv がこれに当たります\footnote{上属和音はその特徴を導音に持っている．
-そのため，Solを持つ\Gnv\Min ではなくSolを半音上げてSol\aSharp にした\Gnv を用いる．
-逆に言えばこのような処置をした結果，和声的短音階が発生するといえる．
+短調では\Gni\Min ，\Gniv\Min ，\Gnv がこれに当たります（\pieceref{長・短両調の主要三和音}）\footnote{%
+  上属和音はその特徴を導音に持っている．
+  そのため，Solを持つ\Gnv\Min ではなくSolを半音上げてSol\aSharp にした\Gnv を用いる．
+  逆に言えばこのような処置をした結果，和声的短音階が発生するといえる．
 }．
 
 \begin{Music}[0.6\linewidth]
@@ -1904,8 +1905,8 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
 主要三和音は主和音を中心とした五度関係を構成しています．
 このことから，主和音と上属和音，主和音と下属和音の間には一つの共通音があり，
 上属和音と下属和音の間には共通音がないことが分かります．
-またこの主要三和音にその調の全ての音階構成音(ただし長調においては自然的長音階，
-短調においては和声的短音階)が出現していることが分かります．
+またこの主要三和音にその調の全ての音階構成音（ただし長調においては自然的長音階，
+短調においては和声的短音階）が出現していることが分かります（\pieceref{主要三和音の五度関係性}）．
 
 \begin{Music}[.6\linewidth]
   \nostartrule%
@@ -2039,19 +2040,27 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   \setclefs{1}{\bass}%
   \generalsignature{0}%
   \Startpiece
+  \znotes|\lcharsuu{(a)}\en
   \NOTes%
-  \ha{6}\ha{7}\ha{3}%
-  |\zchordsu{F}\zh{5}\zh{3}\hu{1}%
-  \zchordsu{G}\zh{4}\zh{2}\hu{-1}%
-  \zchordsu{C}\zh{5}\zh{2}\hu{0}%
+  \ha{f}\ha{g}\ha{c}%
+  |\zchordsu{F}\zh{''c}\zh{'a}\hu{'f}%
+  \zchordsu{G}\zh{'b}\zh{'g}\hu{'d}%
+  \zchordsu{C}\zh{''c}\zh{'g}\hu{'e}%
   \en\doublebar%
   \NOTes%
-  \ha{4}\ha{7}\ha{3}%
-  |\zchordsu{D\Min}\zh{6}\zh{3}\hu{1}%
-  \zchordsu{G}\zh{4}\zh{2}\hu{-1}%
-  \zchordsu{C}\zh{5}\zh{2}\hu{0}%
+  \ha{d}\ha{g}\ha{c}%
+  |\zchordsu{D\Min}\zh{''d}\zh{'a}\hu{'f}%
+  \zchordsu{G}\zh{'b}\zh{'g}\hu{'d}%
+  \zchordsu{C}\zh{''c}\zh{'g}\hu{'e}%
+  \en\doublebar%
+  \znotes|\lcharsuu{(b)}\en
+  \NOTes%
+  \ha{f}\ha{c}%
+  |\zchordsu{F}\zh{''c}\zh{'a}\hu{'f}%
+  \zchordsu{C}\zh{''c}\zh{'g}\hu{'e}%
   \en\setdoublebar%
   \endpiece
+  \piececaption{プレドミナント(a)とプラガル(b)．}\piecelabel{プレドミナントとプラガル}%
 \end{Music}
 \end{Yodan}
 
@@ -2071,7 +2080,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
 \end{quotation}
 
 主和音，属和音，下属和音（以下\Funktion{T}，\Funktion{D}，\Funktion{S}）の連結について考えてみましょう．
-これらは次のように連結する可能性を考えることができます\cite[p.22]{chTHUILLE1}．
+これらは\pieceref{カデンツ素片}のように連結する可能性を考えることができます\cite[p.22]{chTHUILLE1}．
 \begin{enumerate}
   \begin{minipage}{.35\linewidth}\item \Funktion{T}---\Funktion{D}\end{minipage}%
   \begin{minipage}{.35\linewidth}\item \Funktion{T}---\Funktion{S}\end{minipage}%
@@ -2122,7 +2131,8 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   \NOTes%
   \ha{6}|\zchordsu{F}\zh{5}\zh{3}\hu{1}%
   \en\setdoublebar%
-  \endpiece\piecelabel{カデンツ素片}%
+  \endpiece
+  \piececaption{主要三和音の連結例．}\piecelabel{カデンツ素片}%
 \end{Music}
 
 
@@ -2155,7 +2165,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   終止部分に現れる特有の和音連結（\chapref{schluss}参照）のことを指す語であった．
   しかしカデンツでの和音連結の方法が楽曲全体に拡大されるに至って，カデンツという語もまた
   楽曲の各所で表れる和音連結の形を意味するように変化した．
-}というのが次のように形作られます．
+}というのが\pieceref{カデンツの3種の例}のように形作られます．
 
 \begin{Music}
   \setstaffs{1}{2}%
@@ -2185,6 +2195,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   \zchordsu{C}\zh{5}\zh{2}\hu{0}%
   \en\setdoublebar%
   \endpiece
+  \piececaption{カデンツの3種の例．}\piecelabel{カデンツの3種の例}%
 \end{Music}
 
 このカデンツを曲全体にわたって組み合わせることで機能和声による和音連結を成すことができます．
@@ -2211,7 +2222,8 @@ J.~Ph.~Rameauの著作においてはそれぞれ
 \subsection{副三和音}
 % 主要三和音以外のダイアトニック・コードを\KeyBF{副三和音}と言います. % -bell，2019-10-29
 主要三和音以外の調性内三和音を\KeyBF{副三和音}と言います．% +bell，2019-10-29
-これらの和音は独立した機能を持つのではなく，主要三和音と関係づけられてそれらの変形として扱われます．
+これらの和音は独立した機能を持つのではなく，主要三和音と関係づけられてそれらの変形として扱われます
+（\pieceref{長・短両調での主要三和音と副三和音の三度関係性}）．
 つまりトニック・ドミナント・サブドミナントの3つの機能のみが本来的なものであり，
 副三和音は主要三和音を代理するのを本態とするといえます．
 主要三和音を代理した和音は，一般に\KeyBF{代理コード}と呼ばれます．
@@ -2302,7 +2314,8 @@ J.~Ph.~Rameauの著作においてはそれぞれ
 \subsection{長調における副三和音}
 \paragraph{\Gnii\Min の和音}
 \Gnii\Min は\Gniv と下三度関係の和音です．
-そのためこの和音はサブドミナント・コード\Funktion{S}の代理の役割を果たすといえるでしょう．
+そのためこの和音はサブドミナント・コード\Funktion{S}の代理の役割を果たすといえるでしょう
+（\pieceref{Sの代理としての‌II‌m}）．
 
 \begin{floatMusic}[pos=ht]
   \setstaffs{1}{2}%
@@ -2340,6 +2353,7 @@ J.~Ph.~Rameauの著作においてはそれぞれ
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{S}の代理としての\Gnii\Min}%
+  \piecelabel{Sの代理としての‌II‌m}%
 \end{floatMusic}
 
 実際には第一転回形で使うことも多いです．
