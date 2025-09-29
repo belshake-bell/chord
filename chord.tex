@@ -4459,7 +4459,7 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
 \section{プラガル（変格）終止}
 \KeyBF{プラガル終止}（または\KeyBF{変格終止}）(Plagalschluss, plagal cadence)は
 \Funktion{S}---\Funktion{T}による終止で，
-一種敬虔な，柔らかい印象を与えます（（\pieceref{プラガル（変格）}））．
+一種敬虔な，柔らかい印象を与えます（\pieceref{プラガル（変格）終止}）．
 原則的には長調でのみ用いられ，短調ではあまり効果的ではないとされます．
 そのため，短調で使用するときには最後の\Gni\Min の第三音を半音上げて
 長三和音(\Gni)にして終わらせるということが多いです（もちろん原型の\Gni\Min を使うこともあります）．
@@ -4656,9 +4656,12 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
 
 \section{対斜}\sectlabel{FalseRelation}
 ノンダイアトニック・コードを接続するにあたって変化音が発生しますが，
-その変化音による半音進行が複数声部にまたがっていることを\KeyBF{対斜}あるいは\KeyBF{錯誤対立}といいます．
+その変化音による半音進行が\pieceref{対斜が生じる例}のように
+複数声部にまたがっていることを\KeyBF{対斜}あるいは\KeyBF{錯誤対立}といいます．
+\pieceref{対斜が生じない例}(a)のように，
 音階固有音と変化音が同一声部に保たれて順次進行している場合には対斜は成立しません．
-また半音変化を受けていない方の音（音階固有音）が重複されている場合は，どちらか一方が順次進行していれば対斜は成立しません．
+また\pieceref{対斜が生じない例}(b)のように，
+半音変化を受けていない方の音（音階固有音）が重複されている場合は，どちらか一方が順次進行していれば対斜は成立しません．
 ただし同一声部であってもそれが8度の跳躍である場合には対斜と感じられます．
 鍵盤和声においては，同一声でなくとも半音階的半音関係を互いの和音が持つのならば対斜とはあまり感じられないといえます．
 
@@ -4681,18 +4684,21 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \en\setdoublebar%
   \endpiece%
   \piececaption{対斜が生じる例．}%
+  \piecelabel{対斜が生じる例}%
 \end{Music}
 \begin{Music}
   \setstaffs{1}{2}%
   \setinterstaff{1}{10}%
   \setclef{1}{\bass}%
   \Startpiece%
+  \znotes|\lcharsu{a)\ }\en
   \Notes%
   \wh{f}%
   \fl{a}\wh{a}%
   |\zchordsu{F}\MlineC{3}[-\QNwidth]{0}\zw{'a'f}\wh{'c}%
   \zchordsu{A\aFlat}\fl{'a}\fl[hl]{'e}\zw{'a'e}\wh{'c}%
   \en\doublebar%
+  \znotes|\lcharsu{b)\ }\en
   \Notes%
   \wh{c}%
   \wh{A}%
@@ -4701,6 +4707,7 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \en\setdoublebar%
   \endpiece%
   \piececaption{対斜が生じない例．}%
+  \piecelabel{対斜が生じない例}%
 \end{Music}
 
 対斜はいずれか一方が誤って演奏されたかのような悪作用をもたらすことが多いです．
