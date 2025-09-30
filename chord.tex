@@ -1856,7 +1856,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   \zchordsu{A\Dimt}\zw{=3}\zw{5}\wh{7}%
   \zchordsu{B\Dimt}\zw{=4}\zw{6}\wh{8}%
   \en
-  \endpiece\piecelabel{各音階上の三和音}%
+  \endpiece\piececaption{各音階上の三和音．}\piecelabel{各音階上の三和音}%
 \end{Music}
 
 以下では断りがない限りは自然的音階および和声的音階の和音について見ていきます\footnote{%
@@ -1878,9 +1878,10 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
 があげられます．
 これら3つの三和音を合わせて\KeyBF{主要三和音}といいます．
 長調では\Gni ，\Gniv ，\Gnv が，
-短調では\Gni\Min ，\Gniv\Min ，\Gnv がこれに当たります\footnote{上属和音はその特徴を導音に持っている．
-そのため，Solを持つ\Gnv\Min ではなくSolを半音上げてSol\aSharp にした\Gnv を用いる．
-逆に言えばこのような処置をした結果，和声的短音階が発生するといえる．
+短調では\Gni\Min ，\Gniv\Min ，\Gnv がこれに当たります（\pieceref{長・短両調の主要三和音}）\footnote{%
+  上属和音はその特徴を導音に持っている．
+  そのため，Solを持つ\Gnv\Min ではなくSolを半音上げてSol\aSharp にした\Gnv を用いる．
+  逆に言えばこのような処置をした結果，和声的短音階が発生するといえる．
 }．
 
 \begin{Music}[0.6\linewidth]
@@ -1905,8 +1906,8 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
 主要三和音は主和音を中心とした五度関係を構成しています．
 このことから，主和音と上属和音，主和音と下属和音の間には一つの共通音があり，
 上属和音と下属和音の間には共通音がないことが分かります．
-またこの主要三和音にその調の全ての音階構成音(ただし長調においては自然的長音階，
-短調においては和声的短音階)が出現していることが分かります．
+またこの主要三和音にその調の全ての音階構成音（ただし長調においては自然的長音階，
+短調においては和声的短音階）が出現していることが分かります（\pieceref{主要三和音の五度関係性}）．
 
 \begin{Music}[.6\linewidth]
   \nostartrule%
@@ -2040,19 +2041,27 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   \setclefs{1}{\bass}%
   \generalsignature{0}%
   \Startpiece
+  \znotes|\lcharsuu{(a)}\en
   \NOTes%
-  \ha{6}\ha{7}\ha{3}%
-  |\zchordsu{F}\zh{5}\zh{3}\hu{1}%
-  \zchordsu{G}\zh{4}\zh{2}\hu{-1}%
-  \zchordsu{C}\zh{5}\zh{2}\hu{0}%
+  \ha{f}\ha{g}\ha{c}%
+  |\zchordsu{F}\zh{''c}\zh{'a}\hu{'f}%
+  \zchordsu{G}\zh{'b}\zh{'g}\hu{'d}%
+  \zchordsu{C}\zh{''c}\zh{'g}\hu{'e}%
   \en\doublebar%
   \NOTes%
-  \ha{4}\ha{7}\ha{3}%
-  |\zchordsu{D\Min}\zh{6}\zh{3}\hu{1}%
-  \zchordsu{G}\zh{4}\zh{2}\hu{-1}%
-  \zchordsu{C}\zh{5}\zh{2}\hu{0}%
+  \ha{d}\ha{g}\ha{c}%
+  |\zchordsu{D\Min}\zh{''d}\zh{'a}\hu{'f}%
+  \zchordsu{G}\zh{'b}\zh{'g}\hu{'d}%
+  \zchordsu{C}\zh{''c}\zh{'g}\hu{'e}%
+  \en\doublebar%
+  \znotes|\lcharsuu{(b)}\en
+  \NOTes%
+  \ha{f}\ha{c}%
+  |\zchordsu{F}\zh{''c}\zh{'a}\hu{'f}%
+  \zchordsu{C}\zh{''c}\zh{'g}\hu{'e}%
   \en\setdoublebar%
   \endpiece
+  \piececaption{プレドミナント(a)とプラガル(b)．}\piecelabel{プレドミナントとプラガル}%
 \end{Music}
 \end{Yodan}
 
@@ -2072,7 +2081,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
 \end{quotation}
 
 主和音，属和音，下属和音（以下\Funktion{T}，\Funktion{D}，\Funktion{S}）の連結について考えてみましょう．
-これらは次のように連結する可能性を考えることができます\cite[p.22]{chTHUILLE1}．
+これらは\pieceref{カデンツ素片}のように連結する可能性を考えることができます\cite[p.22]{chTHUILLE1}．
 \begin{enumerate}
   \begin{minipage}{.35\linewidth}\item \Funktion{T}---\Funktion{D}\end{minipage}%
   \begin{minipage}{.35\linewidth}\item \Funktion{T}---\Funktion{S}\end{minipage}%
@@ -2123,7 +2132,8 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   \NOTes%
   \ha{6}|\zchordsu{F}\zh{5}\zh{3}\hu{1}%
   \en\setdoublebar%
-  \endpiece\piecelabel{カデンツ素片}%
+  \endpiece
+  \piececaption{主要三和音の連結例．}\piecelabel{カデンツ素片}%
 \end{Music}
 
 
@@ -2156,7 +2166,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   終止部分に現れる特有の和音連結（\chapref{schluss}参照）のことを指す語であった．
   しかしカデンツでの和音連結の方法が楽曲全体に拡大されるに至って，カデンツという語もまた
   楽曲の各所で表れる和音連結の形を意味するように変化した．
-}というのが次のように形作られます．
+}というのが\pieceref{カデンツの3種の例}のように形作られます．
 
 \begin{Music}
   \setstaffs{1}{2}%
@@ -2186,6 +2196,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   \zchordsu{C}\zh{5}\zh{2}\hu{0}%
   \en\setdoublebar%
   \endpiece
+  \piececaption{カデンツの3種の例．}\piecelabel{カデンツの3種の例}%
 \end{Music}
 
 このカデンツを曲全体にわたって組み合わせることで機能和声による和音連結を成すことができます．
@@ -2212,7 +2223,8 @@ J.~Ph.~Rameauの著作においてはそれぞれ
 \subsection{副三和音}
 % 主要三和音以外のダイアトニック・コードを\KeyBF{副三和音}と言います. % -bell，2019-10-29
 主要三和音以外の調性内三和音を\KeyBF{副三和音}と言います．% +bell，2019-10-29
-これらの和音は独立した機能を持つのではなく，主要三和音と関係づけられてそれらの変形として扱われます．
+これらの和音は独立した機能を持つのではなく，主要三和音と関係づけられてそれらの変形として扱われます
+（\pieceref{長・短両調での主要三和音と副三和音の三度関係性}）．
 つまりトニック・ドミナント・サブドミナントの3つの機能のみが本来的なものであり，
 副三和音は主要三和音を代理するのを本態とするといえます．
 主要三和音を代理した和音は，一般に\KeyBF{代理コード}と呼ばれます．
@@ -2303,7 +2315,8 @@ J.~Ph.~Rameauの著作においてはそれぞれ
 \subsection{長調における副三和音}
 \paragraph{\Gnii\Min の和音}
 \Gnii\Min は\Gniv と下三度関係の和音です．
-そのためこの和音はサブドミナント・コード\Funktion{S}の代理の役割を果たすといえるでしょう．
+そのためこの和音はサブドミナント・コード\Funktion{S}の代理の役割を果たすといえるでしょう
+（\pieceref{Sの代理としてのIIm}）．
 
 \begin{floatMusic}[pos=ht]
   \setstaffs{1}{2}%
@@ -2341,13 +2354,56 @@ J.~Ph.~Rameauの著作においてはそれぞれ
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{S}の代理としての\Gnii\Min}%
+  \piecelabel{Sの代理としてのIIm}%
 \end{floatMusic}
 
 実際には第一転回形で使うことも多いです．
-この場合\Funktion{S}の第五音が上方転位したもの(\Funktion{S\Hochgestellt{6}})として考えることもできます．
+この場合\Funktion{S}の第五音が上方転位したもの(\Funktion{S\Hochgestellt{6}})として考えることもできます
+（\pieceref{IImの1転}）．
+
+\begin{floatMusic}[pos=ht]
+  \setstaffs{1}{2}%
+  \setclef{1}{\bass}%
+  \Startpiece%
+  \znotes|\zcharsuu{Substitute for \Funktion{S}}\en
+  \NOTes
+  \zchordsl{\Funktion{S\Hochgestellt{6}}}\ha{f}%
+  \zchordsl{\Funktion{D\Hochgestellt{7}}}\ha{g}%
+  |\zchordsu{D\Min/F}\zh{''d}\zh{'a}\hu{'f}%
+  \zchordsu{G\subsc7}\zh{'b}\rh{'g}\hu{'f}%
+  \en\bar
+  \NOTEs
+  \zchordsl{\Funktion{T}}\wh{c}%
+  |\zchordsu{C}\zw{''c}\zw{'g}\wh{'e}%
+  \en\doublebar
+  \NOTEs
+  \zchordsl{\Funktion{S\Hochgestellt{6}}}\wh{f}%
+  |\zchordsu{D\Min/F}\zw{''d}\zw{'a}\wh{'f}%
+  \en\bar
+  \NOTEs
+  \zchordsl{\Funktion{T}}\wh{c}%
+  |\zchordsu{C}\zw{''e}\zw{''c}\wh{'g}%
+  \en\doublebar
+  \NOTes
+  \zchordsl{\Funktion{S\Hochgestellt{5}}}\wh{f}%
+  \zchordsl{\Funktion{\Mdline\Hochgestellt{6}}}\sk%
+  |\zchordsu{F}\zhu{''c}\zw{'a}\wh{'f}%
+  \zchordsu{D\Min/F}\hu{''d}%
+  \en\bar
+  \NOTes
+  \zchordsl{\Funktion{D\Hochgestellt{7}}}\ha{g}\Mryaku\sk%
+  |\zchordsu{G\subsc7}\zh{'b}\rh{'g}\hu{'f}%
+  \Mryaku\sk
+  \en\setdoublebar
+  \endpiece%
+  \piececaption{\Funktion{S\Hochgestellt{6}}としての\Gnii\Min/\Gniv}%
+  \piecelabel{IImの1転}%
+\end{floatMusic}
+
 \paragraph{\Gnii\Dimt の和音}
 \Gnii\Dimt は不協和和音です．
-共通音の関係からサブドミナント・コード\Funktion{S}の代理としての役割を持つといえます．
+共通音の関係からサブドミナント・コード\Funktion{S}の代理としての役割を持つといえます
+（\pieceref{Sの代理としてのIIdim}）．
 この和音はしばしば\KeyBF*{サブドミナント・マイナー}（\ssectref{MIC}）として認識されますが，
 和声的長音階から由来する物と考えることもできます．
 
@@ -2387,6 +2443,7 @@ J.~Ph.~Rameauの著作においてはそれぞれ
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{S}の代理としての\Gnii\Dimt}%
+  \piecelabel{Sの代理としてのIIdim}%
 \end{floatMusic}
 
 \Gnii\Min の時と同様に第一転回形で使うことも多いです．
@@ -2394,8 +2451,9 @@ J.~Ph.~Rameauの著作においてはそれぞれ
 
 \paragraph{\Gniii\Min の和音}
 この和音は\Gnv の下三度関係の和音であり，\Gni の上三度関係の和音です．
-そのためこの和音は，第一にはドミナント・コード\Funktion{D}の代理として，
+そのためこの和音は，第一にはドミナント・コード\Funktion{D}の代理として（\pieceref{Dの代理としてのIIIm}），
 第二にはトニック・コード\Funktion{T}の代理としての役割を果たすと言えるでしょう
+（\pieceref{Tの代理としてのIIIm}）．
 
 \begin{floatMusic}[pos=ht]
   \setstaffs{1}{2}%
@@ -2442,6 +2500,7 @@ J.~Ph.~Rameauの著作においてはそれぞれ
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{D}の代理としての\Gniii\Min}%
+  \piecelabel{Dの代理としてのIIIm}%
 \end{floatMusic}
 
 % \Funktion{D}の代理として用いるときには，
@@ -2452,6 +2511,7 @@ J.~Ph.~Rameauの著作においてはそれぞれ
 % ただし\Funktion{Tp}が後続する場合は例外的に基本形であっても\Funktion{Dp}として響きます．
 % なんとなればこれは平行調でのエオリア終止が一時的に導入されたものであると捉えることが出来るからです．
 
+\pieceref{Dの代理としてのIIIm}のように
 \Funktion{D}の代理として用いられる場合にSiは調の主音への導音となります．
 このときにはしばしば第一転回形で用いられますが，これは結局のところ
 \Funktion{D}の第五音が上方転位したもの(\Funktion{D\hochgestellt{6}})に他なりません．
@@ -2485,6 +2545,7 @@ J.~Ph.~Rameauの著作においてはそれぞれ
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{T}の代理としての\Gniii\Min}%
+  \piecelabel{Tの代理としてのIIIm}%
 \end{floatMusic}
 
 \Funktion{D}---\Funktion{Tg}---\Funktion{S}なる場合は比較的\Funktion{T}の代理として聞こえます\footnote{
@@ -2503,7 +2564,7 @@ J.~Ph.~Rameauの著作においてはそれぞれ
 
 \paragraph{\Gniv\Min の和音}
 この和音は和声的長音階に由来するもので，\Gniv と同様にサブドミナントとしての性質を持ちます．
-変じられたLa\aFlat は調の上属音への下行導音として働くことがあります．
+変じられたLa\aFlat は調の上属音への下行導音として働くことがあります（\pieceref{Sの代理としてのIVm}）．
 
 \begin{floatMusic}[pos=ht]
   \setstaffs{1}{2}%
@@ -2541,6 +2602,7 @@ J.~Ph.~Rameauの著作においてはそれぞれ
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{S}の代理としての\Gniv\Min}%
+  \piecelabel{Sの代理としてのIVm}%
 \end{floatMusic}
 
 この和音も\Gnii\Dimt と同様にしばしば\KeyBF*{サブドミナント・マイナー}（\ssectref{MIC}）として認識されますが，
@@ -2549,8 +2611,10 @@ J.~Ph.~Rameauの著作においてはそれぞれ
 \paragraph{\bFlat\Gnvi\Aug の和音}
 この和音は増三和音であり，和声的長音階で見られます．
 共通音の関係から\Gni と同様にトニックの性質を持つと考えるのは不適切です．
-なぜならこの和音は不協和和音であり，カデンツの最後に来て区切りを形作るトニックとして使用することはできないからです．
-そのため，共通音の関係からは\Gniv\Min の持つサブドミナントの代理の性質を持つといえます．
+なぜならこの和音は不協和和音であり，カデンツの最後に来て区切りを形作るトニックとして使用することはできないからです
+（\pieceref{Tの代理としてはbVIaugは働かない}）．
+そのため，共通音の関係からは\Gniv\Min の持つサブドミナントの代理の性質を持つといえます
+（\pieceref{Sの代理としてのbVIaug}）．
 
 \begin{floatMusic}[pos=ht]
   \setstaffs{1}{2}%
@@ -2589,7 +2653,8 @@ J.~Ph.~Rameauの著作においてはそれぞれ
   |\zchordsu{A\aFlat\Aug/C}\zw{5}\zw{_3}\wh{0}%
   \en\setdoublebar
   \endpiece%
-  \piecelabel{bVIaug}\piececaption{\Funktion{T}の代理としては\bFlat\Gnvi\Aug は働かない．}%
+  \piececaption{\Funktion{T}の代理としては\bFlat\Gnvi\Aug は働かない．}%
+  \piecelabel{Tの代理としてはbVIaugは働かない}%
 \end{floatMusic}
 
 \begin{floatMusic}[pos=ht]
@@ -2628,14 +2693,15 @@ J.~Ph.~Rameauの著作においてはそれぞれ
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{S}の代理としての\bFlat\Gnvi\Aug}%
+  \piecelabel{Sの代理としてのbVIaug}%
 \end{floatMusic}
 根音La\aFlat はそのまま下行させてSolへ進行するのが最も自然です．
 
 
 \paragraph{\Gnvi\Min の和音}
 この和音は\Gni の下三度関係の和音であり，\Gniv の上三度関係の和音です．
-そのためこの和音は，第一にはトニック・コードの代理として，
-第二にはサブドミナント・コードの代理としての役割を果たすと言えるでしょう．
+そのためこの和音は，第一にはトニック・コードの代理として（\pieceref{Tの代理としてのVIm}），
+第二にはサブドミナント・コードの代理としての役割を果たすと言えるでしょう（\pieceref{Sの代理としてのVIm}）．
 
 \begin{floatMusic}[pos=ht]
   \setstaffs{1}{2}%
@@ -2664,10 +2730,22 @@ J.~Ph.~Rameauの著作においてはそれぞれ
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{T}の代理としての\Gnvi\Min}%
+  \piecelabel{Tの代理としてのVIm}%
 \end{floatMusic}
+
 \Funktion{T}の代理としての用法は特に偽終止（\sectref{deceptive}参照）を構成する上で重要です．
 
 a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度下行してLaへ進むことが許容されます．
+\begin{NB}
+  この導音の例外処理は立場によって許容するかどうかが変わります：
+  \citetitle{chSHIMAOKA1i}や\citetitle{chDUBOIS1}のようなより厳格な態度を取る立場では
+  \Funktion{D}---\Funktion{Tp}のような進行にあっても導音の2度下行は
+  \begin{itemize}
+    \item ソプラノがRe---Doと下行し，
+    \item アルトがSi---Laと下行する
+  \end{itemize}
+  場合に限るという制限を課せられます（\sectref{属七の和音}も参照）．
+\end{NB}
 
 \begin{floatMusic}[pos=ht]
   \setstaffs{1}{2}%
@@ -2705,6 +2783,7 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{S}の代理としての\Gnvi\Min}%
+  \piecelabel{Sの代理としてのVIm}%
 \end{floatMusic}
 ほとんどの場合では\Funktion{T}の代理として使われて，
 \Funktion{S}の代理として使われることは実際にはまずありません．
@@ -2714,7 +2793,8 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
 古典和声においてはこの和音は\Gnv\subsc7（\chapref{FourNote}参照）の根音省略\footnote{%
   これは芸大和声において\Slash\Gnv\subsc7と表される用法と同様である．
 }とみなされ，
-それをもってドミナント・コードの代理としての役割を果たすと考えています\footnote{%
+それをもってドミナント・コードの代理としての役割を果たすと考えています
+（\pieceref{Dの代理としてのVIIdim}）\footnote{%
   ただしこの和音も，Bach以前には（六の和音の形で）協和和音として見なされていたようである\cite[p.64]{chDIETHER1}．
 }．
 
@@ -2763,6 +2843,7 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{D}の代理としての\Gnvii\Dimt}%
+  \piecelabel{Dの代理としてのVIIdim}%
 \end{floatMusic}
 
 
@@ -2779,7 +2860,8 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
 \subsection{短調における副三和音}
 \paragraph{\Gnii\Dimt の和音}
 この和音は長調での\Gnii\Dimt ，\Gnvii\Dimt と同じように減三和音となっています．
-この和音も共通音の関係からサブドミナント・コードの代理の役割を果たすと言えるでしょう．
+この和音も共通音の関係からサブドミナント・コードの代理の役割を果たすと言えるでしょう
+（\pieceref{sの代理としてのIIdim}）．
 
 \begin{floatMusic}[pos=ht]%[.5\linewidth]
   \setstaffs{1}{2}%
@@ -2818,6 +2900,7 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{s}の代理としての\Gnii\Dimt}%
+  \piecelabel{sの代理としてのIIdim}%
 \end{floatMusic}
 
 長調での\Gnii\Min ，\Gnii\Dimt の時と同様に第一転回形で使うことも多いです．
@@ -2827,7 +2910,8 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
 \bFlat\Gniii は\Gnv\Min の下三度関係の和音であり，\Gni\Min の上三度関係の和音です．
 しかし調の主音への上行導音を持たないためにドミナントとしての性質は弱く，
 平行長調のトニックでもあるため，
-ほとんどの場合でこの和音はトニック・コードの代理としての役割を果たすと言えるでしょう．
+ほとんどの場合でこの和音はトニック・コードの代理としての役割を果たすと言えるでしょう
+（\pieceref{tの代理としてのbIII}）．
 
 \begin{floatMusic}[pos=ht]
   \setstaffs{1}{2}%
@@ -2837,7 +2921,7 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   \znotes|\zcharsuu{Substitute for \Funktion{D}?}\en
   \NOTes
   \zchordsl{\Funktion{s}}\ha{6}%
-  \zchordsl{\Funktion{dG}}\ha{7}%
+  \zchordsl{\Funktion{d\hochgestellt{6}}}\ha{7}%
   |\zchordsu{F\Min}\zh{5}\zh{3}\hu{-2}%
   \zchordsu{E\aFlat/G}\MlineB{4}{1}\zh{4}\zh{2}\hu{0}%
   \en\bar
@@ -2847,7 +2931,7 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   \en\doublebar
   \NOTes
   \zchordsl{\Funktion{s}}\ha{6}%
-  \zchordsl{\Funktion{dG}}\ha{7}%
+  \zchordsl{\Funktion{d\hochgestellt{6}}}\ha{7}%
   |\zchordsu{F\Min\subsc6}\zh{6}\lh{5}\hl{3}%
   \zchordsu{E\aFlat/G}\MlineB{4}{-2}\zh{7}\zh{4}\hl{2}%
   \en\bar
@@ -2856,7 +2940,7 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   |\zchordsu{C\Min}\zw{5}\zw{2}\wh{0}%
   \en\doublebar
   \NOTes
-  \zchordsl{\Funktion{dG}}\ha{0}%
+  \zchordsl{\Funktion{d\hochgestellt{6}}}\ha{0}%
   |\zchordsu{E\aFlat/G}\MlineB{4}{-2}\zh{4}\zh{2}\hu{0}%
   \en\bar
   \NOTEs
@@ -2876,6 +2960,7 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{D}の代理として，および\Funktion{t}の代理としての\bFlat\Gniii}%
+  \piecelabel{tの代理としてのbIII}
 \end{floatMusic}
 
 第五音が導音ではないので，ドミナントとしてのはたらきが弱まっていることに注意してください．
@@ -2883,8 +2968,10 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
 
 \paragraph{\bFlat\Gniii\Aug の和音}
 \bFlat\Gniii に対して\bFlat\Gniii\Aug は増三和音を構成していて，調の属音および上行導音をその中に持つことから
-ドミナント・コードの代理としての役割を持ちます．
-トニック・コードの代理と見なさないのは長調の\bFlat\Gnvi\Aug のときと同様です．
+ドミナント・コードの代理としての役割を持ちます
+（\pieceref{Dの代理としてのbIIIaug}）．
+トニック・コードの代理と見なさないのは長調の\bFlat\Gnvi\Aug のときと同様です
+（\pieceref{tの代理としてはbIIIaugは働かない}）．
 
 \begin{floatMusic}[pos=ht]
   \setstaffs{1}{2}%
@@ -2922,6 +3009,7 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{D}の代理としての\bFlat\Gniii\Aug}%
+  \piecelabel{Dの代理としてのbIIIaug}%
 \end{floatMusic}
 
 第五音が導音となっているので\Funktion{D}の代理としてはたらくことができます．
@@ -2957,6 +3045,7 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{t}の代理としては\bFlat\Gniii\Aug は働かない．}%
+  \piecelabel{tの代理としてはbIIIaugは働かない}%
 \end{floatMusic}
 
 トニックとしては不適格ですが，偶成和音として現れることはあり得ます．
@@ -2970,7 +3059,8 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
 
 \paragraph{\Gnv\Min の和音}
 この和音は自然的短音階に由来するもので，通常調性音楽で使われる\Gnv と違い調の主音への上行導音(Sol\aSharp)を持ちません．
-そのため，この和音はドミナントとしての性質は弱いといえます．
+そのため，この和音はドミナントとしての性質は弱いといえます
+（\pieceref{Dの代理としてのVm}）．
 
 \begin{floatMusic}[pos=ht]
   \setstaffs{1}{2}%
@@ -3008,6 +3098,7 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{D}の代理としての\Gnv\Min}%
+  \piecelabel{Dの代理としてのVm}%
 \end{floatMusic}
 
 第三音が導音ではないので，ドミナントとしてのはたらきが弱まっていることに注意してください．
@@ -3037,18 +3128,21 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   \en\setdoublebar
   \endpiece%
   \piececaption{\Gnv\Min の\Funktion{d}---\Funktion{s} cadence．}%
+  \piecelabel{Vmのd-sカデンツ}%
 \end{floatMusic}
 
 この和音が調性音楽で用いられるのはもっぱらSol\aNatural--Fa\aNatural(--Mi)という
 （\Gnv では不可能な）下行形の旋律線への和声付けにほぼ限られます．
 この例はBachのコラール（例えばBWV~311）に見られるものの，実例はおよそ少ないといえるでしょう．
 このとき，和音は\Gnv\Min---\Gniv\Min/\bFlat\Gnvi\ (\Funktion{d}---\Funktion{\tiefgestellt{\Funktion{s}}{(3)}})と
-なることが多いようです．
+なることが多いようです（\pieceref{Vmのd-sカデンツ}）．
 
 \paragraph{\bFlat\Gnvi の和音}
 この和音は\Gni\Min の下三度関係の和音であり，\Gniv\Min の上三度関係の和音です．
-そのためこの和音は，第一にはトニック・コードの代理として，
+そのためこの和音は，第一にはトニック・コードの代理として
+（\pieceref{tの代理としてのbVI}），
 第二にはサブドミナント・コードの代理としての役割を果たすと言えるでしょう
+（\pieceref{sの代理としてのbVI}）．
 
 \begin{floatMusic}[pos=ht]
   \setstaffs{1}{2}%
@@ -3089,6 +3183,7 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{t}の代理としての\bFlat\Gnvi}%
+  \piecelabel{tの代理としてのbVI}%
 \end{floatMusic}
 
 \Funktion{t}の代理としての用法は特に偽終止を構成する上で重要です．
@@ -3132,6 +3227,7 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{s}の代理としての\bFlat\Gnvi}%
+  \piecelabel{sの代理としてのbVI}%
 \end{floatMusic}
 
 \TODO{書きかけ}
@@ -3139,7 +3235,8 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
 \paragraph{\bFlat\Gnvii の和音}
 この和音は\Gnv\Min の上三度関係の和音です．
 この和音は\Gnv\Min と同様に調の主音への上行導音を持たないため，ドミナントとしての性質は弱いといえます．
-ただし平行長調（\chapref{modulation}）の上属和音であるため，その影響でドミナント的に響くことはあります．
+ただし平行長調（\chapref{modulation}）の上属和音であるため，その影響でドミナント的に響くことはあります
+（\pieceref{Dの代理としてのbVII}）．
 
 \begin{floatMusic}[pos=ht]
   \setstaffs{1}{2}%
@@ -3177,6 +3274,7 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{D}の代理としての\bFlat\Gnvii}%
+  \piecelabel{Dの代理としてのbVII}%
 \end{floatMusic}
 
 この和音はドミナントの代理としてというよりもむしろ平行調の\Funktion{D}としてのように
@@ -3205,9 +3303,11 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   \en\setdoublebar
   \endpiece%
   \piececaption{\bFlat\Gnvii の\Funktion{d}---\Funktion{s} cadence．}%
+  \piecelabel{bVIIのd-sカデンツ}%
 \end{floatMusic}
 
-平行長調の上属和音と区別されるとき，この和音の根音は下行します．
+平行長調の上属和音と区別されるとき，この和音の根音は下行します
+（\pieceref{bVIIのd-sカデンツ}）．
 これは\Gnv\Min の時と同様に短旋法におけるSol\aNatural の音が通常下行してFa\aNatural へ進むのを
 本態とするからです\footnote{
   逆に言えば調性音楽の範囲を外れた場合には上行することもあり得るだろう．
@@ -3216,7 +3316,8 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
 \paragraph{\Gnvii\Dimt の和音}
 この和音は長調での\Gnvii\Dimt と同様の取り扱いを受けます．
 すなわち，古典和声においてはこの和音は\Gnv\subsc7（\chapref{FourNote}参照）の根音省略とみなされ，
-それをもってドミナント・コードの代理としての役割を果たすと考えています．
+それをもってドミナント・コードの代理としての役割を果たすと考えています
+（\pieceref{Dの代理としてのVIIdim in minor}）．
 
 \begin{floatMusic}[pos=ht]
   \setstaffs{1}{2}%
@@ -3264,6 +3365,7 @@ a)で示すように，\Funktion{D}---\Funktion{Tp}の進行では導音が2度�
   \en\setdoublebar
   \endpiece%
   \piececaption{\Funktion{D}の代理としての\Gnvii\Dimt}%
+  \piecelabel{Dの代理としてのVIIdim in minor}%
 \end{floatMusic}
 
 \begin{NB}
@@ -3554,9 +3656,11 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \Notes%
   \zchordsu{B\hDim\subsc7}\zw{=4}\zw{6}\zw{8}\wh{=10}\en%
   \endpiece%
+  \piececaption{各音階上の7thコード}%
+  \piecelabel{各音階上の7thコード}%
 \end{Music}
-% ダイアトニック・コードの7thコードは三和音の構成音と第七音の音高によって\tblref{7thコードの種類}のように分けられます．% -bell，2019-10-29
-調性内三和音の7thコードは三和音の構成音と第七音の音高によって\tblref{7thコードの種類}のように分けられます．% +bell，2019-10-29
+調性内三和音の7thコード（\pieceref{各音階上の7thコード}）は
+三和音の構成音と第七音の音高によって\tblref{7thコードの種類}のように分けられます．
 
 \begin{table}[ht]\small% <- 2020/05/05のレイアウト変更に対応するため
 \centering\caption{7thコードの種類}\tbllabel{7thコードの種類}%
@@ -3638,12 +3742,12 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \zchordsu{D\Min\subsc7}\ttie0\zw{''a}\zw{''f}\zw{''c}\wh{'d}%
   \en
   \endpiece%
-  \piececaption{第七音の予備．}%
+  \piececaption{第七音の予備}%
   \piecelabel{第七音の予備}%
 \end{floatMusic}
 
 
-\section{属七の和音，ドミナント7thコード}
+\section{属七の和音，ドミナント7thコード}\sectlabel{属七の和音}
 7thコードの中でも，\Gnv\subsc7は頻繁に用いられる和音です．
 % この和音はダイアトニック・コードの中では% -bell，2019-10-29
 この和音は調性内和音の中では% +bell，2019-10-29
@@ -3680,7 +3784,7 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   |\zchordsu{C}\zw{''c}\zw{'g}\wh{'e}%
   \en\setdoublebar
   \endpiece%
-  \piececaption{属七の和音．}%
+  \piececaption{属七の和音}%
   \piecelabel{属七の和音}%
 \end{floatMusic}
 
@@ -3692,7 +3796,7 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \cite[p.~23]{chHASEGAWA1}および\\
   「トニカ三和音の五度を得るために，トニカ導音を段階的に上方へ導く代りに，三度下方へ跳躍させている。
   導音が内声部の一つに在ることを前提として，この自由は\Gnv---\Gni のつながりでは常に用いられうる」
-  \cite[p.~23]{chTHUILLE1}，\\
+  \cite[p.~33]{chTHUILLE1}，\\
   「それ［導音が下方へ向つて，トニカ三和音の五度に跳躍する］はトニカ三和音への関係が，
   単なるドミナント三和音のそれよりもずつと密接であり，
   確定的であるドミナント七の和音の解決では，いつそう危険のないものである」
@@ -3729,8 +3833,9 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
 
 \section{導音上の7thコード(\texorpdfstring{\Gnvii\hDim\subsc7，\Gnvii\Dim\subsc7}{VII\o7，VIIdim7})}
 長調の導音上の7thコードはしばしば\KeyBF{導七の和音}と呼ばれます．
-この和音は\Gnvii\Dim が\Gnv\subsc7の根音省略と見なされるように，\Gnv\subsc{9}（\chapref{tension}）の根音省略と見なされて
-\Gni(\Min)へと進行することがあります．
+この和音は\Gnvii\Dim が\Gnv\subsc7の根音省略と見なされるように，
+\Gnv\subsc{9}（\chapref{tension}）の根音省略と見なされて
+\Gni(\Min)へと進行することがあります（\pieceref{導七の和音}）．
 
 \begin{Music}[0.5\linewidth]
   \setstaffs{1}{2}%
@@ -3753,11 +3858,13 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   |\zchordsu{C/E}\zw{'g}\zw{'e}\wh{'c}%
   \en\setdoublebar%
   \endpiece%
+  \piececaption{導七の和音}%
+  \piecelabel{導七の和音}%
 \end{Music}
 
 短調の導音上の7thコードは\KeyBF{減七の和音}を構成します．
 この和音も長調の導音上の和音と同様の方法で用いることができます．
-\Gnv\lhsc{7}{\Minus9}の根音省略と見なすのも同様です．
+\Gnv\lhsc{7}{\Minus9}の根音省略と見なすのも同様です（\pieceref{減七の和音}）．
 
 \begin{Music}[0.5\linewidth]
   \setstaffs{1}{2}%
@@ -3783,6 +3890,8 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   |\zchordsu{C\Min/E\aFlat}\zw{'g}\zw{'e}\wh{'c}%
   \en\setdoublebar%
   \endpiece%
+  \piececaption{減七の和音}%
+  \piecelabel{減七の和音}%
 \end{Music}
 %\begin{NB}
 %実際には導音を最低音にするよりも和音の第三音を最低音にするほうが効果が良い．
@@ -3790,7 +3899,8 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
 \begin{Yodan}
 ただしこれらの和音がドミナント\supsc{(\txFlat)}9thコードの根音省略として見なされるのは，
 省略されない形の和音が使われるシューマン以降（すなわち19世紀以降）であり，それ以前は
-ドミナントとサブドミナントの混合であると認識されるべきである~\cite{chDIETHER1}ようです．
+ドミナントとサブドミナントの混合であると認識されるべきである~\cite{chDIETHER1}ようです
+（\pieceref{ドミナントとサブドミナントの混合としての導音上の七の和音}）．
 
 \begin{Music}[0.6\linewidth]
   \nostartrule%
@@ -3806,9 +3916,12 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \zchordsu{F\Min\subsc6}\lpar{5}\rpar{5}\zw{5}\zw{3}\zw{1}\wh{-1}%
   \en%
   \endpiece%
+  \piececaption{導音上の七の和音はドミナントとサブドミナントの混合としても看做される．}%
+  \piecelabel{ドミナントとサブドミナントの混合としての導音上の七の和音}%
 \end{Music}
 
-このような認識はまた次のような進行を正格終止とプラガル終止の複合であるとみなすことも可能にします．
+このような認識はまた\pieceref{正格終止とプラガル終止の複合}のような進行を
+正格終止とプラガル終止の複合であるとみなすことも可能にします．
 すなわち，最低音の進行はプラガル終止のように下属音から主音への進行であり，
 それ以外の声は普通の進行をするものとして．
 
@@ -3833,6 +3946,8 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   |\zchordsu{C\Min}\zw{2}\zw{0}\wh{-2}%
   \en\setdoublebar%
   \endpiece%
+  \piececaption{正格終止とプラガル終止の複合としても看做される例．}%
+  \piecelabel{正格終止とプラガル終止の複合}%
 \end{Music}
 
 この種の和音は芸大和声にあっては（\Gniv 上の）付加\subsupsc46の和音とよばれています\cite[p.91]{chSHIMAOKA1ii}．
@@ -3853,9 +3968,10 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
 ドミナント7th以外の7thコードは通常色彩的な変化を得るために用いられます．
 
 第七音と根音が作る2度音程については注意する必要があります．
-次の例では2小節目はピアノの最高音であるBがメロディのCと短2度音程を構成し，鋭い不協和となります．
-3小節目はBの音を内声に持ってきているため多少は不協和が誤魔化されますが，避けるのが基本的には良いとされます．
-他方，第七音と根音が長2度音程である場合は幾分か不協和の度合いが穏やかになります．
+\pieceref{七の和音の第七音と根音の衝突の例}(b)ではピアノの最高音であるBがメロディのCと短2度音程を構成し，
+鋭い不協和となります．
+(c)はBの音を内声に持ってきているため多少は不協和が誤魔化されますが，避けるのが基本的には良いとされます．
+他方，(d)のように第七音と根音が長2度音程である場合は幾分か不協和の度合いが穏やかになります．
 
 \begin{Music}
   \instrumentnumber{2}%
@@ -3867,6 +3983,7 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \generalsignature{0}%
   \settowidth{\parindent}{Vln. }
   \Startpiece
+  \znotes&\lcharsu{a)\ }\en
   \NOtes%
   \wh{3}|\zw{5}\zw{2}\zw{0}&%
   \zchordsu{C}\ql{7}\ql{6}%
@@ -3874,6 +3991,7 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   &\hl{5}%
   \en%
   \doublebar%
+  \znotes&\lcharsu{b)\ }\en
   \NOtes%
   \wh{3}|\zchordsu{?}\zw{4}\zw{2}\zw{0}&%
   \zchordsu{C\subsc{\Maj7}}\ql{7}\ql{6}%
@@ -3881,6 +3999,7 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   &\hl{5}%
   \en%
   \doublebar%
+  \znotes&\lcharsu{c)\ }\en
   \NOtes%
   \wh{3}|\zw{2}\zw{0}\zw{-3}&%
   \zchordsu{C\subsc{\Maj7}}\ql{7}\ql{6}%
@@ -3888,6 +4007,7 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   &\hl{5}%
   \en%
   \generalsignature{-3}\setdoublebar\changecontext%
+  \znotes&\lcharsu{d)\ }\en
   \NOtes%
   \wh{3}|\zw{0}\zw{2}\zw{4}&%
   \zchordsu{C\Min\subsc7}\ql{7}\ql{6}%
@@ -3895,6 +4015,8 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   &\hl{5}%
   \en\setdoublebar%
   \endpiece%
+  \piececaption{七の和音の第七音と根音の衝突の例．}%
+  \piecelabel{七の和音の第七音と根音の衝突の例}%
 \end{Music}
 \begin{comment}
 %\section{七の和音の和声的取り扱い}
@@ -4097,10 +4219,14 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \sk%\zchordsuu{B\hDim\subsc7}\zw{=4}\zw{6}\zw{8}\wh{=10}
   \en%
   \endpiece%
+  \piececaption{各音階上の6thコード}%
+  \piecelabel{各音階上の6thコード}%
 \end{floatMusic}
 
-6thコードは7thコードとは違い3度堆積の和音ではなくなっているため，特に「付加」六度の和音と呼びます．
-この種の和音は特に下属音上に構成されることが多い他，主音や上属音上において解決を要さない用法で用いられることがあります．
+6thコードは7thコードとは違い3度堆積の和音ではなくなっているため，特に「付加」六度の和音と呼びます
+（\pieceref{各音階上の6thコード}）．
+この種の和音は特に下属音上に構成されることが多い他，
+主音や上属音上において解決を要さない用法で用いられることがあります．
 
 %この付加された第六音は7thコードの第七音と同様に掛留による引き込みを元にしています．
 この和音においては第五音が掛留により予備されるのが本態ですが，根音または第三音の予備でも可とする場合があります．
@@ -4134,7 +4260,9 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \NOTEs%
   \zchordsu{C\Min}\zw{7}\zw{5}\zw{2}\wh{-2}%
   \en\setdoublebar%
-  \endpiece\piecelabel{6thコードの連結}%
+  \endpiece
+  \piececaption{6thコードの連結}%
+  \piecelabel{6thコードの連結}%
 \end{floatMusic}
 
 % サブドミナント上の6thコードを用いた\Gniv (m)\subsc{6}---\Gni (m)というカデンツはいいぞ[書きかけ]
@@ -4158,7 +4286,9 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \Notes%
   \zchordsu{D\hDim\subsc7}\zw{5}\zw{3}\zw{1}\wh{-1}%
   \en\setdoublebar%
-  \endpiece\piecelabel{6thコードの転義}%
+  \endpiece
+  \piececaption{6thコードの転義}%
+  \piecelabel{6thコードの転義}%
 \end{floatMusic}
 
 % \subsection{\txCirc\hDim\subsc6の和音}
@@ -4203,7 +4333,7 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
 
 \section{正格終止}
 \KeyBF{正格終止}\xkanjispace(authentscher Schluss, authentic cadence)は
-\Funktion{S}---\Funktion{D}---\Funktion{T}という原型をもちます．
+\Funktion{S}---\Funktion{D}---\Funktion{T}という原型をもちます（\pieceref{正格終止}）．
 ただし，\Funktion{T}は\Gnvi\Min などで代理されることはありません
 （これは\sectref{deceptive}で述べる偽終止に相当します）．
 \Funktion{T}とは異なり，\Funktion{S}や\Funktion{D}では他の和音で代理されたりします\footnote{%
@@ -4323,12 +4453,14 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   |\zchordsu{C(\Min)}\zw{5}\zw{2}\parna{0}\wh{0}%
   \en\setdoublebar%
   \endpiece%
+  \piececaption{正格終止}%
+  \piecelabel{正格終止}%
 \end{Music}
 
 \section{プラガル（変格）終止}
 \KeyBF{プラガル終止}（または\KeyBF{変格終止}）(Plagalschluss, plagal cadence)は
 \Funktion{S}---\Funktion{T}による終止で，
-一種敬虔な，柔らかい印象を与えます．
+一種敬虔な，柔らかい印象を与えます（\pieceref{プラガル（変格）終止}）．
 原則的には長調でのみ用いられ，短調ではあまり効果的ではないとされます．
 そのため，短調で使用するときには最後の\Gni\Min の第三音を半音上げて
 長三和音(\Gni)にして終わらせるということが多いです（もちろん原型の\Gni\Min を使うこともあります）．
@@ -4368,6 +4500,8 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   |\zchordsu{C}\zw{5}\zw{2}\wh{=0}%
   \en\setdoublebar
   \endpiece
+  \piececaption{プラガル（変格）終止}%
+  \piecelabel{プラガル（変格）終止}%
 \end{Music}
 
 
@@ -4376,8 +4510,7 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
 これを特に\KeyBF{偽終止}\xkanjispace(Trugschluss, deceptive cadence)といいます\footnote{%
   厳密には終止構造を持っている必要があるが，
   そうでない場合にもポピュラー音楽ではこの語を用いることがある．
-}．
-長調においては以下のようになります．
+}（\pieceref{偽終止}）．
 
 \begin{Music}[.6\linewidth]
   \generalmeter{\meterC}%
@@ -4403,11 +4536,6 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \wh{5}|\zchordsu{E\Min}\zw{7}\zw{4}\wh{2}%
   \en\setdoublebar%
   \endpiece
-\end{Music}
-
-短調においては以下のようになります．
-
-\begin{Music}[.6\linewidth]
   \generalmeter{\meterC}%
   \generalsignature{-3}%
   \setstaffs{1}{2}%
@@ -4432,10 +4560,13 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \wh{5}|\zchordsu{E\aFlat}\zw{7}\zw{_4}\wh{2}%
   \en\setdoublebar%
   \endpiece%
+  \piececaption{偽終止}%
+  \piecelabel{偽終止}%
 \end{Music}
 
 \section{半終止}
-曲が一段落するところで\Gnv に落ち着くものはすべて\KeyBF{半終止}\xkanjispace(Halbschluss, half cadence)といいます．
+曲が一段落するところで\Gnv に落ち着くものはすべて\KeyBF{半終止}\xkanjispace(Halbschluss, half cadence)といいます
+（\pieceref{半終止}）．
 
 \begin{Music}[.6\linewidth]
   \generalmeter{\meterC}%
@@ -4458,6 +4589,8 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \zchordsu{A\Min}\zq{5}\zq{3}\qu{0}\Mryaku%
   \en\setemptybar%
   \endpiece
+  \piececaption{半終止}%
+  \piecelabel{半終止}%
 \end{Music}
 
 また，変則的ではあるものの\Gniv 上に落ち着くものも半終止の変形であるとみなすことがあります．
@@ -4467,7 +4600,7 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
 これは形としては\Gniv\Min---\bFlat\Gnvii\Min/\bFlat\Gnii---\Gni というもので，
 通常の正格終止などに見られる主音への上行導音を欠く代わりに，半音下へ変化した上主音が
 主音への下行導音として働きます．
-またこれの変形として，\bFlat\Gnii---\Gni という進行も考えることができます．
+またこれの変形として，\bFlat\Gnii---\Gni という進行も考えることができます（\pieceref{フリギア終止}）．
 
 \begin{Music}[.6\linewidth]
   \generalmeter{\meterC}%
@@ -4500,6 +4633,8 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   |\zchordsu{C}\zw{=''e}\zw{''c}\wh{'g}%
   \en\setdoublebar%
   \endpiece%
+  \piececaption{フリギア終止}%
+  \piecelabel{フリギア終止}%
 \end{Music}
 
 \begin{FGN}
@@ -4522,9 +4657,12 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
 
 \section{対斜}\sectlabel{FalseRelation}
 ノンダイアトニック・コードを接続するにあたって変化音が発生しますが，
-その変化音による半音進行が複数声部にまたがっていることを\KeyBF{対斜}あるいは\KeyBF{錯誤対立}といいます．
+その変化音による半音進行が\pieceref{対斜が生じる例}のように
+複数声部にまたがっていることを\KeyBF{対斜}あるいは\KeyBF{錯誤対立}といいます．
+\pieceref{対斜が生じない例}(a)のように，
 音階固有音と変化音が同一声部に保たれて順次進行している場合には対斜は成立しません．
-また半音変化を受けていない方の音（音階固有音）が重複されている場合は，どちらか一方が順次進行していれば対斜は成立しません．
+また\pieceref{対斜が生じない例}(b)のように，
+半音変化を受けていない方の音（音階固有音）が重複されている場合は，どちらか一方が順次進行していれば対斜は成立しません．
 ただし同一声部であってもそれが8度の跳躍である場合には対斜と感じられます．
 鍵盤和声においては，同一声でなくとも半音階的半音関係を互いの和音が持つのならば対斜とはあまり感じられないといえます．
 
@@ -4547,18 +4685,21 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \en\setdoublebar%
   \endpiece%
   \piececaption{対斜が生じる例．}%
+  \piecelabel{対斜が生じる例}%
 \end{Music}
 \begin{Music}
   \setstaffs{1}{2}%
   \setinterstaff{1}{10}%
   \setclef{1}{\bass}%
   \Startpiece%
+  \znotes|\lcharsu{a)\ }\en
   \Notes%
   \wh{f}%
   \fl{a}\wh{a}%
   |\zchordsu{F}\MlineC{3}[-\QNwidth]{0}\zw{'a'f}\wh{'c}%
   \zchordsu{A\aFlat}\fl{'a}\fl[hl]{'e}\zw{'a'e}\wh{'c}%
   \en\doublebar%
+  \znotes|\lcharsu{b)\ }\en
   \Notes%
   \wh{c}%
   \wh{A}%
@@ -4567,6 +4708,7 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \en\setdoublebar%
   \endpiece%
   \piececaption{対斜が生じない例．}%
+  \piecelabel{対斜が生じない例}%
 \end{Music}
 
 対斜はいずれか一方が誤って演奏されたかのような悪作用をもたらすことが多いです．
