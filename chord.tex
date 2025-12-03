@@ -4281,6 +4281,76 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \piecelabel{6thコードの連結}%
 \end{floatMusic}
 
+% 2025-11-23
+ジャズなどの比較的複雑な響きの和音を常用するジャンルでは
+主和音として\Gni(\Min)\subsc6を使うことがあります（\pieceref{主和音としての6thコード}）．
+これは6thコードの響きを求めてという理由以外にも，
+特に旋律に主音が来るときに7thコードを使用すると2度の衝突を生じるのでこれを避けるためというのがあります．
+
+\begin{floatMusic}[pos=ht]
+  \instrumentnumber{2}%
+  \def\Piano{1}\def\Guitar{2}%
+  \generalmeter{\meterC}%
+  \setstaffs{1}{2}%
+  \setclef{1}{\bass}%
+  \Startpiece%
+  \znotes&\zchordsu{D\Min\subsc9}\en
+  \Notest%
+  \wh{d}%
+  |\zw{''c}\zw{'a}\rw{'f}\wh{'e}%
+  &\ibl0{''e}{0}\qb0{''e}\bltext0\qb0{''f}\tql0{''e}%
+  \en\Notes
+  &\Ibl0{''d}{''c}1\qb0{''d}\tql0{''c}%
+  \Ibu0{'b}{'a}1\qb0{'b}\tqu0{'a}%
+  \Ibu0{'g}{'g}1\qb0{'g}\fl{'g}\tqu0{'g}%
+  \en\bar
+  \znotes&\zchordsu{G\subsc9}\en
+  \Notes%
+  \wh{g}%
+  |\rw{'b}\zw{'a}\zw{'f}\wh{'d}%
+  &\Ibu0{'f}{'a}1\qb0{'f}\tqu0{'a}%
+  \Dqbl{''c}{''e}%
+  \Dqbl{''f}{''e}%
+  \Dqbl{''d}{'b}%
+  \en\bar
+  \znotes&\zchordsu{C\subsc6}\en
+  \NOTEs%
+  \wh{c}%
+  |\zw{''c}\rw{'a}\zw{'g}\wh{'e}%
+  &\wh{''c}%
+  \en\setdoublebar\endpiece
+  \generalmeter{\meterC}%
+  \generalsignature{-3}%
+  \Startpiece%
+  \znotes&\zchordsu{D\hDim\subsc9}\en
+  \Notest%
+  \wh{d}%
+  |\zw{''c}\zw{'a}\rw{'f}\na{'e}\wh{'e}%
+  &\ibl0{''e}{0}\na{''e}\qb0{''e}\bltext0\qb0{''f}\tql0{''e}%
+  \en\Notes
+  &\Ibl0{''d}{''c}1\qb0{''d}\tql0{''c}%
+  \Ibu0{'b}{'a}1\qb0{'b}\tqu0{'a}%
+  \Ibu0{'g}{'g}1\qb0{'g}\fl{'g}\tqu0{'g}%
+  \en\bar
+  \znotes&\zchordsu{G\subsupsc7{\Minus9}}\en
+  \Notes%
+  \wh{g}%
+  |\na{'b}\rw{'b}\zw{'a}\zw{'f}\wh{'d}%
+  &\Ibu0{'f}{'e}1\qb0{'f}\tqu0{'e}%
+  \Dqbu{'d}{'a}%
+  \Dqbu{'g}{'f}%
+  \Ibu0{'d}{b}1\qb0{'d}\na{b}\tqu0{b}%
+  \en\bar
+  \znotes&\zchordsu{C\Min\subsc6}\en
+  \NOTEs%
+  \wh{c}%
+  |\zw{''c}\na{'a}\rw{'a}\zw{'g}\wh{'e}%
+  &\wh{'c}%
+  \en\setdoublebar\endpiece
+  \piececaption{主和音としての6thコード}%
+  \piecelabel{主和音としての6thコード}%
+\end{floatMusic}
+
 % サブドミナント上の6thコードを用いた\Gniv (m)\subsc{6}---\Gni (m)というカデンツはいいぞ[書きかけ]
 6thコードは構成音を転回することで7thコードと見ることもできます（\pieceref{6thコードの転義}）．
 特に下属音上に構成される6thコードは転回した場合，上属和音への偽属和音となります．
@@ -4306,6 +4376,7 @@ T.~Duboisの和声学では和音の連結規則について，「和音の連�
   \piececaption{6thコードの転義}%
   \piecelabel{6thコードの転義}%
 \end{floatMusic}
+
 
 % \subsection{\txCirc\hDim\subsc6の和音}
 % この種の和音は和声的長調および和声的短調の上主音上に構成されます．

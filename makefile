@@ -1,4 +1,4 @@
-TARGET = $(basename $(filter-out HEADER.tex,$(wildcard *.tex)))
+TARGET = $(basename $(wildcard *.tex))
 SRC = $(addsuffix .tex,$(TARGET))
 PDFTARGET = $(addsuffix .pdf,$(TARGET))
 DVITARGET = $(addsuffix .dvi,$(TARGET))
@@ -30,7 +30,7 @@ makeindex: $(MDXTARGET)
 
 %.dvi: %.tex
 	uplatex $(notdir $<)
-	if [ -e $(basename $(notdir $<)).mx1 ]; then $(MAKE) -B $(basename $(notdir $<)).mx2; uplatex $(notdir $<) ;fi
+	if [ -e $(basename $(notdir $<)).mx1 ]; then $(MAKE) -B $(basename $(notdir $<)).mx2; fi
 	if [ -e $(basename $(notdir $<)).bcf ]; then $(MAKE) -B $(basename $(notdir $<)).bbl; fi
 	if [ -e $(basename $(notdir $<)).idx ]; then $(MAKE) -B $(basename $(notdir $<)).ind; fi
 	uplatex $(notdir $<)
@@ -56,3 +56,8 @@ movelog:
 clean:
 	rm -f $(DVITARGET)
 	$(MAKE) movelog
+
+makelog:
+	git log --graph --date=short --all --pretty="format:(%C(yellow)%h) %C(cyan)%ad \"%C(green)%an\"%C(reset)%x09%C(red)%d%C(reset) %s" 1> "log_all.gitlog"
+	git log --graph --date=short       --pretty="format:(%C(yellow)%h) %C(cyan)%ad \"%C(green)%an\"%C(reset)%x09%C(red)%d%C(reset) %s" 1> "log.gitlog"
+
