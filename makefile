@@ -35,8 +35,8 @@ makeindex: $(MDXTARGET)
 	uplatex $(LATEXOpt) $(notdir $<)
 	if [ -e $(basename $(notdir $<)).mx1 ]; then $(MAKE) -B $(basename $(notdir $<)).mx2; fi
 	if [ -e $(basename $(notdir $<)).bcf ]; then $(MAKE) -B $(basename $(notdir $<)).bbl; fi
-	if [ -e $(basename $(notdir $<)).idx ]; then $(MAKE) -B $(basename $(notdir $<)).ind; fi
 	uplatex $(LATEXOpt) $(notdir $<)
+	if [ -e $(basename $(notdir $<)).idx ]; then $(MAKE) -B $(basename $(notdir $<)).ind; fi
 	uplatex $(LATEXOpt) -synctex=1 $(notdir $<)
 	$(MAKE) movelog TARGET=$(basename $(notdir $<))
 
