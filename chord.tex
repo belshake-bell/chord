@@ -7631,71 +7631,85 @@ C\Dimt というコードは
   \item A minの\Gniii\Aug
   \item E Majの\bFlat\Gnvi\Aug
 \end{itemize}
-として考えられます．
+として考えられます（\pieceref{ある和音を共通和音とする近親調または遠隔調．}）．
 
-\begin{Music}[.6\linewidth]
+\begin{floatMusic}[pos=ht,width=0.6\linewidth]
   \nostartrule%
   \generalsignature{0}%
   \Startpiece
   \znotes\lchordsl{C:}\lchordsll{A\Min:}\en%
   \Notes%
-  \zchordsl{\Gni}\zchordsll{\bFlat\Gniii}\zw{2}\zw{0}\wh{-2}%
+  \zchordsl{\Gni}\zchordsll{\bFlat\Gniii}%
+    \zw{'g}\zw{'e}\wh{'c}%
   \en\setdoublebar\generalsignature{1}\ignorenats\changecontext%
   \znotes\lchordsl{G:}\lchordsll{E\Min:}\en%
   \Notes%
-  \zchordsl{\Gniv}\zchordsll{\bFlat\Gnvi}\zw{2}\zw{0}\wh{-2}%
+  \zchordsl{\Gniv}\zchordsll{\bFlat\Gnvi}%
+    \zw{'g}\zw{'e}\wh{'c}%
   \en\setdoublebar\generalsignature{-1}\ignorenats\changecontext%
   \znotes\lchordsl{F:}\lchordsll{D\Min:}\en%
   \Notes%
-  \zchordsl{\Gnv}\zchordsll{\bFlat\Gnvii}\zw{2}\zw{0}\wh{-2}%
+  \zchordsl{\Gnv}\zchordsll{\bFlat\Gnvii}%
+    \zw{'g}\zw{'e}\wh{'c}%
   \en\setdoublebar\generalsignature{-4}\ignorenats\changecontext%
   \znotes\lchordsl{F\Min:}\en%
   \Notes%
-  \zchordsl{\Gnv}\zw{2}\zw{=0}\wh{-2}%
+  \zchordsl{\Gnv}%
+    \zw{'g}\zw{='e}\wh{'c}%
   \en\setdoublebar%
   \endpiece
   \generalsignature{-3}%
   \Startpiece
   \znotes\lchordsl{C\Min:}\lchordsll{E\aFlat:}\en%
   \Notes%
-  \zchordsl{\Gni\Min}\zchordsll{\Gnvi\Min}\zw{2}\zw{0}\wh{-2}%
+  \zchordsl{\Gni\Min}\zchordsll{\Gnvi\Min}%
+    \zw{2}\zw{0}\wh{-2}%
   \en\setdoublebar\generalsignature{-2}\ignorenats\changecontext%
   \znotes{\lchordsl{G\Min:}}{\lchordsll{B\aFlat:}}\en%
   \Notes%
-  \zchordsl{\Gniv\Min}\zchordsll{\Gnii\Min}\zw{2}\zw{0}\wh{-2}%
+  \zchordsl{\Gniv\Min}\zchordsll{\Gnii\Min}%
+    \zw{'g}\zw{'e}\wh{'c}%
   \en\setdoublebar\generalsignature{-4}\ignorenats\changecontext%
   \znotes\lchordsl{F\Min:}\lchordsll{A\aFlat:}\en%
   \Notes%
-  \zchordsl{\Gnv\Min}\zchordsll{\Gniii\Min}\zw{2}\zw{0}\wh{-2}%
+  \zchordsl{\Gnv\Min}\zchordsll{\Gniii\Min}%
+    \zw{'g}\zw{'e}\wh{'c}%
   \en\setdoublebar\generalsignature{1}\ignorenats\changecontext%
   \znotes\lchordsl{G:}\en%
   \Notes%
-  \zchordsl{\Gniv\Min}\zw{2}\zw{_0}\wh{-2}%
+  \zchordsl{\Gniv\Min}%
+    \zw{'g}\zw{_'e}\wh{'c}%
   \en\setdoublebar%
   \endpiece
   \generalsignature{-5}%
   \Startpiece
   \znotes\lchordsl{D\aFlat:}\lchordsll{B\aFlat\Min:}\en%
   \Notes%
-  \zchordsl{\Gnvii\Dimt}\zchordsll{\Gnii\Dimt}\zw{2}\zw{0}\wh{-2}%
+  \zchordsl{\Gnvii\Dimt}\zchordsll{\Gnii\Dimt}%
+    \zw{'g}\zw{'e}\wh{'c}%
   \en\setdoublebar\generalsignature{-2}\ignorenats\changecontext%
   \znotes\lchordsl{B\aFlat:}\en%
   \Notes%
-  \zchordsl{\Gnii\Dimt}\zw{_2}\zw{0}\wh{-2}%
+  \zchordsl{\Gnii\Dimt}%
+    \zw{_'g}\zw{'e}\wh{'c}%
   \en\setdoublebar%
   \endpiece%
   \generalsignature{0}%
   \Startpiece%
   \znotes\lchordsl{A\Min:}\en%
   \Notes%
-  \zchordsl{\bFlat\Gniii\Aug}\zw{^2}\zw{0}\wh{-2}%
+  \zchordsl{\bFlat\Gniii\Aug}%
+    \zw{^'g}\zw{'e}\wh{'c}%
   \en\setdoublebar\generalsignature{4}\ignorenats\changecontext%
   \znotes\lchordsl{E:}\en%
   \Notes%
-  \zchordsl{\bFlat\Gnvi\Aug}\zw{2}\zw{0}\wh{=-2}%
+  \zchordsl{\bFlat\Gnvi\Aug}%
+    \zw{'g}\zw{'e}\wh{='c}%
   \en\setdoublebar%
   \endpiece
-\end{Music}
+  \piececaption{ある和音を共通和音とする近親調または遠隔調．}%
+  \piecelabel{ある和音を共通和音とする近親調または遠隔調．}%
+\end{floatMusic}
 
 これらを共通和音として転調に用いることができます．
 
@@ -7708,136 +7722,160 @@ C\Dimt というコードは
 この種の転調を\KeyBF{半音階的転調}とか，\KeyBF{クロマチック転調}と呼びます
 
 これは出発調においてノンダイアトニック・コードで目的調において調性内和音という形でもよいですし，
-その逆，またはどちらの調においてもノンダイアトニック・コードであるということも可能です．
-\begin{Music}
+その逆，またはどちらの調においてもノンダイアトニック・コードである
+ということも可能です（\pieceref{半音変化を伴う和音を共通和音とする転調．}）．
+\begin{floatMusic}[pos=ht]
   \generalmeter{\meterC}%
   \generalsignature{0}%
   \setstaffs{1}{2}\setclef{1}{6}%
   \Startpiece
   \NOTes%
-  \ha{3}%
-  \ha{6}%
-  |\zchordsu{C}\zh{5}\zh{2}\hu{0}%
-  \zchordsu{F}\zh{5}\zh{3}\hu{1}%
+  \ha{c}%
+  \ha{f}%
+  |\zchordsu{C}\zh{''c}\zh{'g}\hu{'e}%
+  \zchordsu{F}\zh{''c}\zh{'a}\hu{'f}%
   \en\bar%
   \NOTes%
-  \ha{7}%
-  \ha{5}%
-  |\zchordsu{G}\zh{4}\zh{2}\hu{-1}%
-  \zchordsu{C/E}\zh{5}\zh{2}\hu{-2}%
+  \ha{g}%
+  \ha{e}%
+  |\zchordsu{G}\zh{'b}\zh{'g}\hu{'d}%
+  \zchordsu{C/E}\zh{''c}\zh{'g}\hu{'c}%
   \en\bar%
   \NOTes%
-  \zchordsl{\Gnii\Min}\ha{4}%
-  \lrchordsl{es:&\Gniv\Min\subsc6}\ha{_8}%
-  |\zchordsu{D\Min}\zh{6}\zh{3}\hu{1}%
-  \zchordsu{A\aFlat\Min\subsc6}\zh{_7}\fl[l]{5}\zh{5}\hl{1}%
-  \en\bar%
+  \zchordsl{\Gnii\Min}\ha{d}%
+  \lrchordsl{es:&\Gniv\Min\subsc6}\ha{_a}%
+  |\zchordsu{D\Min}\zh{''d}\zh{'a}\hu{'f}%
+  \zchordsu{A\aFlat\Min\subsc6}\zh{_''e}\fl[hql]{''c}\zh{''c}\hl{'f}%
+  \en\bar\addspace{.3\afterruleskip}%
   \NOTes%
-  \ha{_9}%
-  \ha{_2}%
-  |\zchordsu{\hspace{-\QNwidth}E\aFlat\Min/B\aFlat}\zh{_7}\fl[l]{4}\zh{4}\hl{_2}%
-  \zchordsu{B\aFlat}\zh{6}\zh{4}\hu{1}%
-  \en\bar%
+  \ha{_b}%
+  \ha{_B}%
+  |\zchordsu{\hspace{-\QNwidth}E\aFlat\Min/B\aFlat}\zh{_''e}\fl[hql]{'b}\zh{'b}\hl{_'g}%
+  \zchordsu{B\aFlat}\zh{''d}\zh{'b}\hu{'f}%
+  \en\bar\addspace{.3\afterruleskip}%
   \NOTEs%
-  \wh{_5}%
-  |\zchordsu{E\aFlat\Min}\zw{_7}\fl[l]{4}\zw{4}\wh{_2}%
+  \wh{_e}%
+  |\zchordsu{E\aFlat\Min}\zw{_''e}\fl[hql]{'b}\zw{'b}\wh{_'g}%
   \en\setdoublebar%
   \endpiece
-\end{Music}
+  \piececaption{半音変化を伴う和音を共通和音とする転調．}%
+  \piecelabel{半音変化を伴う和音を共通和音とする転調．}%
+\end{floatMusic}
 
 
 \subsection{エンハーモニック転換を伴う転調}\ssectlabel{enharmonic_modulation}
 エンハーモニック転換を伴う転調とは，共通和音の構成音の全てあるいは一部に対してエンハーモニック転換を行うものです．
 \subsubsection{全ての構成音にエンハーモニック転換を行う例}
 全ての構成音にエンハーモニック転換を行う例は少ないと言えます．
-先に上げたD\aFlat Maj調でのC\Dimt とC\aSharp min調でのB\aSharp\Dimt は1つの例といえます．
+先に上げたD\aFlat Maj調でのC\Dimt とC\aSharp min調でのB\aSharp\Dimt は1つの例といえます
+（\pieceref{全ての構成音にエンハーモニック転換を行う例．}）．
 
-\begin{Music}[.6\linewidth]
+\begin{floatMusic}[pos=ht,width=.6\linewidth]
   \nostartrule%
   \generalsignature{-5}%
   \Startpiece
   \Notes%
-  \lrchordsl{Des:&\Gnvii\Dimt}\zchordsu{C\Dimt}\zw{2}\zw{0}\wh{-2}%
+  \lrchordsl{Des:&\Gnvii\Dimt}\zchordsu{C\Dimt}%
+    \zw{'g}\zw{'e}\wh{'c}%
   \en\setdoublebar\generalsignature{+4}\ignorenats\changecontext%
   \Notes%
-  \lrchordsl{cis:\hspace{\QNwidth}&\Gnvii\Dimt}\zchordsu{B\aSharp\Dimt}\zw{1}\zw{-1}\wh{^-3}%
+  \lrchordsl{cis:\hspace{\QNwidth}&\Gnvii\Dimt}\zchordsu{B\aSharp\Dimt}%
+    \zw{'f}\zw{'d}\wh{^b}%
   \en\setdoublebar
   \endpiece
-\end{Music}
+  \piececaption{全ての構成音にエンハーモニック転換を行う例．}%
+  \piecelabel{全ての構成音にエンハーモニック転換を行う例．}%
+\end{floatMusic}
 
 
 \subsubsection{一部の構成音にエンハーモニック転換を行う例}
 一部の構成音にエンハーモニック転換を行う和音の特に重要な例として，減七の和音や増三和音，増三四六の和音
-（あるいはエンハーモニック転換して\txCirc\lhsc{7}{\bFlat5}）があげられます．
+（あるいはエンハーモニック転換して\txCirc\lhsc{7}{\bFlat5}）があげられます
+（\pieceref{一部の構成音にエンハーモニック転換を行う例．}）．
 これらは隣り合う構成音間の音程に対称性があります．
 例えば減七の和音は半音3つ分の間隔で，増三和音は半音4つ分の間隔で各構成音が存在しています．
 また増三四六の和音は半音4つ分と半音2つ分の繰り返しとなっています．
 この対称性は容易に響きを保ったまま転義することを可能にします．
 
-\begin{Music}[.7\linewidth]
+\begin{floatMusic}[pos=ht,width=.7\linewidth]
   \nostartrule%
   \Startpiece
   \Notes%
-  \zchordsu{G\aSharp\Dim\subsc7}\zw{1}\zw{-1}\zw{-3}\wh{^-5}%
+  \zchordsu{G\aSharp\Dim\subsc7}%
+    \zw{'f}\zw{'d}\zw{b}\wh{^g}%
   \en%
   \Notes\zchordsu{$=$}\en%
   \Notes%
-  \zchordsu{B\Dim\subsc7}\zw{_3}\zw{1}\zw{-1}\wh{-3}%
+  \zchordsu{B\Dim\subsc7}%
+    \zw{_'a}\zw{'f}\zw{'d}\wh{b}%
   \en%
   \Notes\zchordsu{$=$}\en%
   \Notes%
-  \zchordsu{D\Dim\subsc7}\zw{_5}\fl[l]{3}\zw{3}\zw{1}\wh{-1}%
+  \zchordsu{D\Dim\subsc7}%
+    \zw{_''c}\fl[l]{'a}\zw{'a}\zw{'f}\wh{'d}%
   \en%
   \Notes\zchordsu{$=$}\en%
   \Notes%
-  \zchordsu{F\Dim\subsc7}\zw{_7}\fl[qll]{5}\zw{5}\fl[ql]{3}\zw{3}\zw{1}%
+  \zchordsu{F\Dim\subsc7}%
+    \zw{_''e}\fl[qll]{''c}\zw{''c}\fl[ql]{'a}\zw{'a}\wh{'f}%
   \en%
   \Notes\zchordsu{$=$}\en%
   \Notes%
-  \zchordsu{A\aFlat\Dim\subsc7$=$G\aSharp\Dim\subsc7}\zw{<9}\fl[ll]{7}\zw{7}\fl[ql]{5}\zw{5}\fl[qll]{3}\zw{3}%
+  \zchordsu{A\aFlat\Dim\subsc7$=$G\aSharp\Dim\subsc7}%
+    \zw{<''g}\fl[ll]{''e}\zw{''e}\fl[ql]{''c}\zw{''c}\fl[qll]{''c}\wh{'a}%
   \en%
   \endpiece
   \Startpiece
   \Notes%
-  \zchordsu{A\aFlat\Aug}\zw{0}\zw{-2}\wh{_-4}%
+  \zchordsu{A\aFlat\Aug}%
+    \zw{'e}\zw{'c}\wh{_a}%
   \en%
   \Notes\zchordsu{$=$}\en%
   \Notes%
-  \zchordsu{C\Aug}\zw{^2}\zw{0}\wh{-2}%
+  \zchordsu{C\Aug}%
+    \zw{^'g}\zw{'e}\wh{'c}%
   \en%
   \Notes\zchordsu{$=$}\en%
   \Notes%
-  \zchordsu{E\Aug}\zw{^4}\sh[l]{2}\zw{2}\wh{0}%
+  \zchordsu{E\Aug}%
+    \zw{^'b}\sh[l]{'g}\zw{'g}\wh{'e}%
   \en%
   \Notes\zchordsu{$=$}\en%
   \Notes%
-  \zchordsu{G\aSharp\Aug$=$A\aFlat\Aug}\zw{>6}\sh[hll]{4}\zw{4}\sh[hl]{2}\wh{2}%
+  \zchordsu{G\aSharp\Aug$=$A\aFlat\Aug}%
+    \zw{>'d}\sh[hll]{'b}\zw{'b}\sh[hl]{'g}\wh{'g}%
   \en%
   \endpiece
   \generalsignature{0}%
   \Startpiece
   \Notes%
-  \zchordsu{F\lhsc{7}{\bFlat5}}\zw{_7}\fl[l]{5}\zw{5}\zw{3}\wh{1}%
+  \zchordsu{B\lhsc{7}{\bFlat5}}%
+    \zw{'a}\zw{'f}\zw{^'d}\wh{b}%
   \en%
   \Notes\zchordsu{$=$}\en%
   \Notes%
-  \zchordsu{C\aFlat\lhsc{7}{\bFlat5}}\dfl{11}\dfl[hll]{9}\fl[ql]{7}\fl[l]{5}\zw{11}\zw{9}\zw{7}\wh{5}%
+  \zchordsu{F\lhsc{7}{\bFlat5}}%
+    \zw{_''e}\fl[l]{''c}\zw{''c}\zw{'a}\wh{'f}%
   \en%
   \Notes\zchordsu{$=$}\en%
   \Notes%
-  \zchordsu{B\lhsc{7}{\bFlat5}}\zw{10}\zw{8}\zw{^6}\wh{4}%
+  \zchordsu{C\aFlat\lhsc{7}{\bFlat5}$=$B\lhsc{7}{\bFlat5}}%
+    \dfl{''b}\dfl[hll]{''g}\fl[ql]{''e}\fl[l]{''c}\zw{''b}\zw{''g}\zw{''e}\wh{''c}%
   \en%
-  \endpiece
-\end{Music}
+  \endpiece\vspace{-.5\baselineskip}%
+  \piececaption{一部の構成音にエンハーモニック転換を行う例．}%
+  \piecelabel{一部の構成音にエンハーモニック転換を行う例．}%
+\end{floatMusic}
 
 
 
 \section{ドミナント7thを用いた転調}
 ドミナント7thを用いた転調は直接転調の発展版と言えるもので，多少無理のある調へ進んでも
-違和感を少なくすることができます．
+違和感を少なくすることができます
+（\pieceref{ドミナント7thを用いた転調．}）．
 これはまた，半音変化を伴う和音を共通和音とする転調と言えなくもないですが，
 そのように解釈するよりもこちらのほうが実践的であると考えることができます．
-\begin{Music}
+\begin{floatMusic}[pos=ht]
   \interstaff{14}%default:9
   \generalmeter{\meterC}%
   \generalsignature{0}%
@@ -7845,70 +7883,76 @@ C\Dimt というコードは
   \setclef{1}{\bass}%
   \Startpiece
   \NOtes
-  \zql{3}\qu{12}%
-  \figbassuuu[6]\zql{5}\qu{10}%
-% \figbassuuu[3][\txSharp4][6]\lchordsl{a:\ }\zchordsl{\Gnvii\subsc7}\zql{4}\qu{9}%
-  \figbassuuu[3][\txSharp4][6]\lrchordsl{A:&\Funktion{\Stellung{\Slash D}{7}\Hochgestellt{9\tiefalt}}}\zql{4}\qu{9}%
-% \figbassuuu[6]\zchordsl{\Gni\subsc\txSharp}\zql{^3}\qu{8}%
-  \figbassuuu[6]\zchordsl{\Funktion{\Stellung{T}{3}}}\zql{^3}\qu{8}%
-  |\zql{2}\qu{5}%
-  \zql{0}\qu{2}%
-  \rql{1}\qu{^2}%
-  \zql{0}\qu{3}%
+  \zql{c}\qu{'e}%
+  \figbassuuu[6]%
+    \zql{e}\qu{'c}%
+  \figbassuuu[3][\txSharp4][6]%
+    \lrchordsl{A:&\Funktion{\Stellung{\Slash D}{7}\Hochgestellt{9\tiefalt}}}%
+    \zql{d}\qu{b}%
+  \figbassuuu[6]\zchordsl{\Funktion{\Stellung{T}{c}}}%
+    \zql{^c}\qu{a}%
+  |\zql{'g}\qu{''c}%
+  \zql{'e}\qu{'g}%
+  \rql{'f}\qu{^'g}%
+  \zql{'e}\qu{'a}%
   \en\bar
   \NOtes
-% \figbassuuu[\txSharp][7]\lchordsl{H:\ }\zchordsl{\Gnv\subsc7}\zql{^6}\qu{10}%
-  \figbassuuu[\txSharp][7]\lrchordsl{H: &\Funktion{D\Hochgestellt{\subsupsc{5\tiefalt}7}}}\zql{^6}\qu{10}%
-% \figbassuuu[\txSharp][6]\zchordsl{\Gni}\zql{^4}\qu{9}%
-  \figbassuuu[\txSharp][6]\cchordsl{\Funktion{\Stellung{T}{3}}}\zql{^4}\qu{9}%
-% \figbassuuu[\txFlat5][\txSharp6]\lchordsl{g:\ }\zchordsl{\Gniv\subsupsc*{5}{\btxSharp6}}\fl[ql]{5}\zql{5}\qu{_9}%
+  \figbassuuu[\txSharp][7]\lrchordsl{H: &\Funktion{D\Hochgestellt{\subsupsc{5\tiefalt}7}}}%
+    \zql{^f}\qu{'c}%
+  \figbassuuu[\txSharp][6]\cchordsl{\Funktion{\Stellung{T}{3}}}%
+    \zql{^d}\qu{b}%
   \figbassuuu[\txFlat5][\txSharp6]%
     \lrchordsl{G:&\Funktion{\Stellung{\Slash{\WechselD}}{5\tiefalt}\Hochgestellt{\subsupsc7{9\tiefalt}}}}%
-    \fl[ql]{5}\zql{5}\qu{_9}%
-% \figbassuuu[\txSharp]\lchordsll{G:\ }\zchordsll{\Gnv}\zchordsl{\Gnv}\zql{=4}\qu{8}%
-  \figbassuuu[\txSharp]\zchordsl{\Funktion{D}}\zql{=4}\qu{8}%
-  |\zql{0}\qu{^3}%
-  \zql{^1}\qu{4}%
-  \zql{2}\qu{^5}%
-  \zql{1}\qu{6}%
-  \en\bar%\hardspace{\QNwidth}%
+    \fl[ql]{e}\zql{e}\qu{_b}%
+  \figbassuuu[\txSharp]\zchordsl{\Funktion{D}}%
+    \zql{=d}\qu{a}%
+  |\zql{'e}\qu{^'a}%
+  \zql{^'f}\qu{'b}%
+  \zql{'g}\qu{^''c}%
+  \zql{'f}\qu{''d}%
+  \en\bar\addspace{.5\afterruleskip}%
   \NOtes
-% \figbassuuu[6]\zchordsll{\Gnvi}\zql{7}\parna{9}\qu{9}%
-  \figbassuuu[6]\zchordsl{\Funktion{\Stellung{Tp}{3}}}\zql{7}\parna{9}\qu{9}%
-  \figbassuuuu[3][4][\txSharp6]\zql{8}\qu{^11}%
-  \figbassuuuu[6]\zql{7}\qu{12}%
-% \figbassuuuu[\txFlat][5][6]\lchordsl{C:\ }\zchordsl{\Gnii\subsupsc56}\zql{6}\qu{=11}%
-  \figbassuuuu[\txFlat][5][6]\lrchordsl{C: &\Funktion{s\Hochgestellt{\subsupsc56}}}\zql{6}\qu{=11}%
-  |\zql{2}\qu{7}%
-  \zql{5}\qu{^8}%
-  \zql{4}\qu{9}%
-  \zql{5}\qu{_10}%
+  \figbassuuu[6]\zchordsl{\Funktion{\Stellung{Tp}{3}}}%
+    \zql{g}\parna{b}\qu{b}%
+  \figbassuuuu[3][4][\txSharp6]%
+    \zql{a}\qu{^'d}%
+  \figbassuuuu[6]%
+    \zql{g}\qu{'e}%
+  \figbassuuuu[\txFlat][5][6]\lrchordsl{C: &\Funktion{s\Hochgestellt{\subsupsc56}}}%
+    \zql{f}\qu{='d}%
+  |\zql{'g}\qu{''e}%
+  \zql{''c}\qu{^''f}%
+  \zql{'b}\qu{''g}%
+  \zql{''c}\qu{_''a}%
   \en\bar%
   \NOtes
-% \figbassuuuu[4][6]\zchordsl{\Gni\subsupsc46}\zhl{7}\hu{12}%
-  \figbassuuuu[4][6]\zchordsl{\Funktion{D\Hochgestellt{\subsupsc46}}}\zhl{7}\hu{12}%
+  \figbassuuuu[4][6]\zchordsl{\Funktion{D\Hochgestellt{\subsupsc46}}}%
+    \zhl{g}\hu{'e}%
   \figbassuuuu[---][---]\sk%
-  \figbassuuuu[3][5]\zhl{0}\hu{9}%
+  \figbassuuuu[3][5]%
+    \zhl{G}\hu{b}%
   \figbassuuuu[7]\sk%
-  |\zql{5}\qu{9}%
-  \zql{2}\qu{5}%
-  \zql{2}\hu{6}%
-  \ql{1}%
+  |\zql{''c}\qu{''g}%
+  \zql{'g}\qu{''c}%
+  \zql{'g}\hu{''d}%
+  \ql{'f}%
   \en\bar%
   \NOTes
-  \zw{3}\wh{10}%
-  |\zw{0}\wh{5}%
+  \zw{c}\wh{'c}%
+  |\zw{'e}\wh{''c}%
   \en\setdoublebar%
-  \endpiece%
-\end{Music}
+  \endpiece
+  \piececaption{ドミナント7thを用いた転調．}%
+  \piecelabel{ドミナント7thを用いた転調．}%
+\end{floatMusic}
 %\begin{chuui}
 %下に示したローマ数字による和声記号はその骨格を示すもので，正確な形を示しているものではないことに注意．
 %\end{chuui}
 
 ドミナント7thによって転調した先で，さらにドミナント7thを用いて連続で転調することが可能です．
-次は最も極端な例と言えるでしょう．
+\pieceref{ドミナント7thを用いた転調の連鎖．}は最も極端な例と言えるでしょう．
 
-\begin{Music}
+\begin{floatMusic}[pos=ht]
   \generalmeter{\meterC}%
   \generalsignature{0}%
   \setstaffs{1}{2}\setclef{1}{\bass}%
@@ -7954,7 +7998,9 @@ C\Dimt というコードは
   \wh{_3}|\zchordsu{C\aFlat\subsc7($=$B\subsc7)}\zw{_0}\dfl[qhl]{-3}\zw{-3}\wh{_-5}%
   \en\setdoublebar%
   \endpiece
-\end{Music}
+  \piececaption{ドミナント7thを用いた転調の連鎖．}%
+  \piecelabel{ドミナント7thを用いた転調の連鎖．}%
+\end{floatMusic}
 
 この場合，各和音で次の和音の根音を主音とする調に転調していると考えられます．
 
