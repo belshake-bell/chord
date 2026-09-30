@@ -1456,7 +1456,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
 フランス式とドイツ式があります\footnote{あいにくとフランス式については詳しくなく，
 ドイツ式にしてもそこまで詳しくはないので細かくどうと言うことが出来ないのだが．
 }．
-\begin{Music}
+\begin{floatMusic}[pos=ht,width=0.9\linewidth]
   \setstaffs{1}{2}%
   \setclef{1}{\bass}%
   \interstaff{10}%default:9
@@ -1487,7 +1487,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   \figbassu[2]\wh{c}|\zw{'a}\zw{'f}\wh{'d}%
   \en\setdoublebar%
   \endpiece%
-\end{Music}
+\end{floatMusic}
 
 譜例左の数字付低音で表される和音（の一例）は右のようになります．
 実際には最高音が変化したりということがあります．
@@ -1523,7 +1523,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
 長調であれば頭文字を大文字で，短調であれば小文字で書き表すことが多いです．
 ポピュラー系では調の主音の英語音名にMajあるいはminの表記を加えるか，あるいは調の主和音で表すのが主です．
 
-\begin{Music}
+\begin{floatMusic}[pos=ht,width=0.9\linewidth]
   \setstaffs{1}{2}%
   \setclef{1}{\bass}%
   \Startpiece%
@@ -1576,7 +1576,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   |\zw{''c}\zw{'g}\wh{'e}%
   \en\setdoublebar%
   \endpiece%
-\end{Music}
+\end{floatMusic}
 
 この方法で表す場合は，調の中の和音の機能が分かりやすいという長所があります．
 他方で調性が頻繁に変わると表記が煩雑になる，流派により表記が異なるなどの難点もあります．
@@ -1593,7 +1593,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
 }を表す\Funktion{G}を和音記号として使って表すものです．
 最低音は表記された音名からの音度を用いて和音記号の下または右下に表し，変化音や付加音，旋律的変化は右上に示します．
 また短三和音であれば小文字で表します．
-\begin{Music}[0.8\linewidth]
+\begin{floatMusic}[pos=ht,width=0.9\linewidth]
   \setstaffs{1}{2}%
   \setclef{1}{\bass}%
   \Startpiece%
@@ -1616,7 +1616,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   \zchordsl{\Funktion{D}}\zchordsu{}\wh{g}|\zw{'b}\zw{'g}\wh{'d}%
   \en\setdoublebar%
   \endpiece%
-\end{Music}
+\end{floatMusic}
 
 この方法はローマ数字による方法と同様に調内での和音の機能が分かりやすく，
 また旋律的変化を記述できるという長所がありますが，
@@ -1666,7 +1666,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   \item 和音の最低音が根音ではない音の場合には，コードシンボルの末尾に/Xのように付記して表します．
         例えばA/Eは「Aを根音とし，最低音がEである長三和音」を表します（\chapref{OnChord}参照）．
 \end{itemize}
-\begin{Music}[0.6\linewidth]
+\begin{floatMusic}[pos=ht,width=0.9\linewidth]
   \setstaffs{1}{2}%
   \setclef{1}{\bass}%
   \Startpiece%
@@ -1680,7 +1680,8 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   \wh{g}|\zchordsu{C/G}\zw{''c}\zw{'g}\wh{'e}%
   \en\setdoublebar%
   \endpiece%
-\end{Music}
+  \piececaption{和音の転回形。}
+\end{floatMusic}
 
 この方法は実際に鳴らす和音が明らかに示されるため演奏に便利であるという長所があります．
 ただし和音の機能は明示的ではないので，機能和声の分析としてはやや不向きな面もあります．
@@ -1690,7 +1691,7 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
 \section{倍音列}\sectlabel{倍音列}
 ある振動数$\omega_0$の音を基準として，その振動数を整数倍した音を並べていくことで得られる音列を\KeyBF{倍音列}と呼びます．
 
-\begin{Music}%[0.8\linewidth]
+\begin{floatMusic}[pos=ht,width=0.9\linewidth]
 %  \nostartrule%
   \parindent=3zw\relax
   \instrumentnumber{2}%
@@ -1753,7 +1754,8 @@ subtonic（和訳するならば下主音）と呼ばれるようです．
   \wh{'e}%
   \en%
   \endpiece%
-\end{Music}
+  \piececaption{倍音列。}
+\end{floatMusic}
 \begin{chuui}
   1centとは1半音を100等分した音程である．
   つまり，100centは1半音に相当する音程である．
